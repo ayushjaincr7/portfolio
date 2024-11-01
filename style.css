@@ -42,6 +42,10 @@ nav.scrolled {
   color: #f3c35f;
 }
 
+.intro {
+  text-align: left;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
