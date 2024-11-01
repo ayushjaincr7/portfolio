@@ -1,9 +1,10 @@
 /* Base Styles */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   overflow-x: hidden;
   background-color: #f8f8f8;
   scroll-behavior: smooth; /* Smooth scrolling */
@@ -61,7 +62,7 @@ nav.scrolled {
 /* Hero Section */
 .hero-section {
   height: 100vh;
-  background: url('background.gif') no-repeat center center/cover;
+  background: url("background.gif") no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,10 +132,10 @@ nav.scrolled {
   flex: 0 0 auto;
   text-align: center;
 }
-.about_section h3{
+.about_section h3 {
   color: black;
 }
-.intro p{
+.intro p {
   color: black;
 }
 
@@ -152,8 +153,6 @@ nav.scrolled {
 .social a:hover {
   color: #f3c35f;
 }
-
-
 
 /* Learn Section */
 .box-learn {
@@ -209,8 +208,8 @@ nav.scrolled {
 /* -----------  SKILLS  ----------- */
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #E6F0FA;
+  font-family: "Arial", sans-serif;
+  background-color: #e6f0fa;
   color: #333;
   margin: 0;
   padding: 0;
@@ -237,7 +236,7 @@ p {
 
 .skill_ {
   display: inline-block;
-  min-height:450px;
+  min-height: 450px;
   width: 30%;
   margin: 1%;
   background-color: #fff;
@@ -267,34 +266,30 @@ p {
 
 @media (max-width: 768px) {
   .skill_ {
-      width: 45%;
-      margin: 2.5%;
+    width: 45%;
+    margin: 2.5%;
   }
 }
 
 @media (max-width: 480px) {
   .skill_ {
-      width: 100%;
-      margin: 10px 0;
+    width: 100%;
+    margin: 10px 0;
   }
 
   h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   p {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 }
 
-
-
-
 /*  */
 
-
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #1c1c1c;
   color: #f5f5f5;
   margin: 0;
@@ -360,7 +355,8 @@ h1 {
 .leaves img {
   height: 200px;
 }
-.project-details h1,p {
+.project-details h1,
+p {
   color: white;
 }
 .project-details a {
@@ -375,20 +371,10 @@ h1 {
   padding-bottom: 20px;
 }
 
-
-
-
-
-
-
-
-
 /* Timeline */
 
-
-
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #f7f7f7;
   margin: 0;
   padding: 0;
@@ -479,22 +465,20 @@ h1 {
 
 @media (max-width: 768px) {
   .timeline-item {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .timeline-item .timeline-content {
-      width: 90%;
-      text-align: center;
+    width: 90%;
+    text-align: center;
   }
 
   .timeline-item .timeline-icon {
-      margin-top: 20px;
-      width: 30%;
+    margin-top: 20px;
+    width: 30%;
   }
 }
-
-
 
 /* General styling for the section */
 #certi {
@@ -561,4 +545,33 @@ h1 {
 
 #papers h3 {
   color: black;
+}
+
+.bg {
+  background: url("background2.gif") no-repeat center center/cover;
+  text-align: left;
+}
+
+.contact-container {
+  width: 400px;
+  height: 400px;
+}
+.big {
+  font-weight: 900;
+  font-size: 20px;
+}
+.contact-container h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+.contact-container p {
+  margin: 5px 0;
+}
+
+.contact-container {
+  margin: 15px 0;
+}
+
+#link {
+  size: 500px;
 }
