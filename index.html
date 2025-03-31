@@ -1,334 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>____Portfolio____</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-  </head>
-  <body>
-    <nav class="navBar">
-      <a href="#skills" data-replace="Skills">
-        <span>Skills</span>
-      </a>
-      <a href="#projects" data-replace="Projects">
-        <span>Projects</span>
-      </a>
-      <a href="#timeline" data-replace="Timeline">
-        <span>Timeline</span>
-      </a>
-      <a href="#certi" data-replace="Certificate">
-        <span>Certificate</span>
-      </a>
-      <a href="#contact" data-replace="Contact">
-        <span>Contact</span>
-      </a>
-    </nav>
 
-    <div class="about-me-container">
-      <div class="content">
-        <img src="pro.png" alt="Profile Picture" class="profile-pic" />
-        <div class="text">
-          <h1>About Me</h1>
-          <p>
-            Hello! My name is Ayush Jain. I’m a passionate learner and a fresher
-            machine learning engineer with hands on experiences in ML, NLP, and
-            computer vision. I enjoy solving real-world problems. Let’s build
-            something amazing together!
-          </p>
-        </div>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>____Portfolio____</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
 
-    <!-- Skills Section -->
-    <div id="skills">
-      <h2>Skills</h2>
-      <div class="skill-list">
-        <div class="skill-item">
-          <h3>Programming</h3>
-          <p>Python, C++, Bash</p>
-        </div>
-        <div class="skill-item">
-          <h3>Databases</h3>
-          <p>SQL, MongoDB, VectorDB</p>
-        </div>
-        <div class="skill-item">
-          <h3>Python</h3>
-          <p>Flask, FastAPI, BeautifulScope, OpenCV, Streamlit, NLTK</p>
-        </div>
-        <div class="skill-item">
-          <h3>Machine Learning</h3>
-          <p>
-            Pytorch, Scikit-Learn, XGBoost, LangChain, HuggingFace Transformers
-          </p>
-        </div>
-        <div class="skill-item">
-          <h3>Data Analysitcs Tools</h3>
-          <p>Numpy, Pandas, Matplotlib, SciPy</p>
-        </div>
-      </div>
-    </div>
+<body>
+  <nav class="navBar">
+    <a href="#skills" data-replace="Skills">
+      <span>Skills</span>
+    </a>
+    <a href="#projects" data-replace="Projects">
+      <span>Projects</span>
+    </a>
+    <a href="#timeline" data-replace="Timeline">
+      <span>Timeline</span>
+    </a>
+    <a href="#certi" data-replace="Certificate">
+      <span>Certificate</span>
+    </a>
+    <a href="#contact" data-replace="Contact">
+      <span>Contact</span>
+    </a>
+  </nav>
 
-    <!-- PROJECTS -->
-
-    <div id="projects">
-      <h1>PROJECTS</h1>
-
-      <!-- Machine Learning Category -->
-      <div class="project-category">
-        <div class="project-title" onclick="toggleDropdown('ml-projects')">
-          Machine Learning <span class="expand-icon">+</span>
-        </div>
-        <div class="project-details" id="ml-projects">
-          <div class="block">
-            <h4>Customer Segmentation Dashboard</h4>
-            <p>
-              The Customer Segmentation Dashboard leverages machine learning and
-              data visualization techniques to analyze and segment customers
-              based on transactional data. The dashboard enables users to upload
-              CSV or Excel files containing customer information, such as
-              purchase frequency, recency, and monetary value. These features
-              are processed, and customers are grouped into clusters using the
-              KMeans algorithm. The clusters are then visualized using Principal
-              Component Analysis (PCA) to reduce dimensionality and plot the
-              clusters in a 2D space.
-            </p>
-            <a
-              href="https://github.com/ayushjaincr7/Customer_Segmentation_Dashboard"
-              target="_blank"
-              >View on GitHub</a
-            >
-            <hr />
-          </div>
-        </div>
-      </div>
-
-      <!-- Computer Vision Category -->
-      <div class="project-category">
-        <div class="project-title" onclick="toggleDropdown('cv-projects')">
-          Computer Vision <span class="expand-icon">+</span>
-        </div>
-        <div class="project-details" id="cv-projects">
-          <div class="block">
-            <h4>PLANT CLASSIFICATION USING LEAVES</h4>
-            <p>
-              Correctly classifying plant species is crucial for ecological and
-              conservation efforts, yet traditional machine learning approaches
-              rely on manually extracted features, which can be limiting. Our
-              study focuses on automating the classification of 10 plant species
-              native to India using advanced deep learning techniques. We found
-              that ResNet-50 outperformed the other models, significantly
-              improving the precision and effectiveness of plant classification
-              tasks.
-            </p>
-            <a
-              href="https://github.com/ayushjaincr7/PLANT-CLASSIFICATION-USING-LEAVES"
-              target="_blank"
-              >View on GitHub</a
-            >
-            <hr />
-          </div>
-
-          <div>
-            <h4>Automatic Number Plate Recognition</h4>
-            <p>
-              This project focuses on the automatic detection of vehicles and
-              recognition of their license plates from video frames, leveraging
-              cutting-edge computer vision techniques. The approach uses YOLOv8
-              for vehicle detection and EasyOCR for text recognition of license
-              plates.
-            </p>
-            <a
-              href="https://github.com/ayushjaincr7/NumberPlateRecognition"
-              target="_blank"
-              >View on GitHub</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <!-- Natural Language Processing Category -->
-      <div class="project-category">
-        <div class="project-title" onclick="toggleDropdown('nlp-projects')">
-          Natural Language Processing (NLP) <span class="expand-icon">+</span>
-        </div>
-        <div class="project-details" id="nlp-projects">
-          <p>Update soon...</p>
-        </div>
-      </div>
-
-      <!-- Generative AI Category -->
-      <div class="project-category">
-        <div class="project-title" onclick="toggleDropdown('genai-projects')">
-          Generative AI <span class="expand-icon">+</span>
-        </div>
-        <div class="project-details" id="genai-projects">
-          <div class="block">
-            <h4>YouTube Notes Maker</h4>
-            <p>
-              This application simplifies the process of summarizing YouTube
-              videos by leveraging LangChain and youtube_transcript_api. The
-              transcript is processed and summarized using a language model
-              (LLM), offering users a clean and accessible way to capture key
-              points from videos.
-            </p>
-            <a
-              href="https://github.com/ayushjaincr7/youtube_notes_maker"
-              target="_blank"
-              >View on GitHub</a
-            >
-            <hr />
-            <h4>Multilingual AI Assistant</h4>
-            <p>
-              This application is a voice-powered chatbot that
-              supports multiple languages, enabling natural interaction through
-              speech and text. Perfect for customer support, accessibility, and
-              education, it makes communication effortless and inclusive.
-            </p>
-            <a
-              href="https://github.com/ayushjaincr7/youtube_notes_maker"
-              target="_blank"
-              >View on GitHub</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <!-- Software and Tools Development Category -->
-      <div class="project-category">
-        <div class="project-title" onclick="toggleDropdown('tools-projects')">
-          Software and Tools Development <span class="expand-icon">+</span>
-        </div>
-        <div class="project-details" id="tools-projects">
-          <p>Update soon...</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- JavaScript -->
-    <script>
-      function toggleDropdown(projectId) {
-        const projectDetails = document.getElementById(projectId);
-        const expandIcon =
-          projectDetails.previousElementSibling.querySelector(".expand-icon");
-
-        if (projectDetails.style.display === "block") {
-          projectDetails.style.display = "none";
-          expandIcon.textContent = "+";
-        } else {
-          projectDetails.style.display = "block";
-          expandIcon.textContent = "-";
-        }
-      }
-    </script>
-
-    <!-- Time lIne -->
-
-    <section id="timeline">
-      <h1>Timeline</h1>
-      <p class="subtitle">A short summary of academics and experiences</p>
-
-      <div class="timeline-container">
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3>2020-2024</h3>
-            <h2>Meerut Institute of Engineering & Technology (MIET)</h2>
-            <p>
-              As an undergraduate student pursuing a Bachelor of Technology in
-              Computer Science Engineering with a specialization in Artificial
-              Intelligence and Machine Learning at MIET, I am passionate about
-              using technology to solve real-world problems. My studies have
-              equipped me with a solid foundation in computer science, focusing
-              on data analysis, machine learning algorithms, and intelligent
-              systems. I am excited to apply my skills to create innovative
-              solutions in AI.
-            </p>
-          </div>
-          <div class="timeline-icon google">
-            <img src="timeline/miet.png" alt="Google" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- certificate  -->
-
-    <section id="certi">
-      <h1>Certificates & Trainings</h1>
-      <div class="certificate-container">
-        <h2>My Certificates</h2>
-        <ul>
-          <li>
-            <a
-              href="https://drive.google.com/file/d/13Tni5g5Fp2SKpYDF2aRt4AB7ELvozBDh/view"
-              target="_blank"
-              >Data Science Masters Pro 2024 (iNeuron)</a
-            >
-            
-          </li>
-          <li>
-            <a
-              href="https://drive.google.com/file/d/1FwU8mg5lISekM_q80-CRURpktg7v0igS/view?usp=sharing"
-              target="_blank"
-              >Mastering Generative AI with OpenAI, LangChain, and LlamaIndex (iNeuron)</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.freecodecamp.org/certification/Ayush_Jain7/data-analysis-with-python-v7"
-              target="_blank"
-              >Data Analysis with Python in freeCodeCamp</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.freecodecamp.org/certification/Ayush_Jain7/scientific-computing-with-python-v7"
-              target="_blank"
-              >Scientific Computing with Python in freeCodeCamp</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.freecodecamp.org/certification/Ayush_Jain7/javascript-algorithms-and-data-structures"
-              target="_blank"
-              >JavaScript in freeCodeCamp</a
-            >
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="contact-container">
+  <div class="about-me-container">
+    <div class="content">
+      <img src="pro.png" alt="Profile Picture" class="profile-pic" />
+      <div class="text">
+        <h1>About Me</h1>
         <p>
-          Email:
-          <a href="mailto:ja7ayush@gmail.com" id="link">ja7ayush@gmail.com</a> |
-          Phone: <a href="tel:+917351787808" id="link">7351787808</a> |
-          <a
-            href="https://www.linkedin.com/in/ayush-jain-a96720250/"
-            target="_blank"
-            title="LinkedIn"
-            class="bi bi-linkedin"
-          ></a>
-          |
-          <a
-            href="https://www.linkedin.com/in/ayush---jain07/"
-            target="_blank"
-            title="GitHub"
-            class="bi bi-github"
-          ></a>
-          |
-          <a
-            href="https://drive.google.com/uc?export=download&id=1IN7hzO0f0qQW-NPs_LDKuY7ZRkA9sMwB"
-            download
-            ><i class="bi bi-file-pdf"></i>Resume</a
-          >
+          Hello! My name is Ayush Jain. I’m a passionate learner and a fresher
+          machine learning engineer with hands on experiences in ML, NLP, and
+          computer vision. I enjoy solving real-world problems. Let’s build
+          something amazing together!
         </p>
       </div>
-    </section>
-  </body>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div id="skills">
+    <h2>Skills</h2>
+    <div class="skill-list">
+      <div class="skill-item">
+        <h3>Programming</h3>
+        <p>Python, C++, Bash</p>
+      </div>
+      <div class="skill-item">
+        <h3>Databases</h3>
+        <p>SQL, MongoDB, VectorDB</p>
+      </div>
+      <div class="skill-item">
+        <h3>Python</h3>
+        <p>Flask, FastAPI, BeautifulScope, OpenCV, Streamlit, NLTK</p>
+      </div>
+      <div class="skill-item">
+        <h3>Machine Learning</h3>
+        <p>
+          Pytorch, Scikit-Learn, XGBoost, LangChain, HuggingFace Transformers
+        </p>
+      </div>
+      <div class="skill-item">
+        <h3>Data Analysitcs Tools</h3>
+        <p>Numpy, Pandas, Matplotlib, SciPy</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+
+  <div id="projects">
+    <h1>PROJECTS</h1>
+
+    <!-- Machine Learning Category -->
+    <div class="project-category">
+      <div class="project-title" onclick="toggleDropdown('ml-projects')">
+        Machine Learning <span class="expand-icon">+</span>
+      </div>
+      <div class="project-details" id="ml-projects">
+        <div class="block">
+          <h4>Customer Segmentation Dashboard</h4>
+          <p>
+            The Customer Segmentation Dashboard leverages machine learning and
+            data visualization techniques to analyze and segment customers
+            based on transactional data. The dashboard enables users to upload
+            CSV or Excel files containing customer information, such as
+            purchase frequency, recency, and monetary value. These features
+            are processed, and customers are grouped into clusters using the
+            KMeans algorithm. The clusters are then visualized using Principal
+            Component Analysis (PCA) to reduce dimensionality and plot the
+            clusters in a 2D space.
+          </p>
+          <a href="https://github.com/ayushjaincr7/Customer_Segmentation_Dashboard" target="_blank">View on GitHub</a>
+          <hr />
+        </div>
+      </div>
+    </div>
+
+    <!-- Computer Vision Category -->
+    <div class="project-category">
+      <div class="project-title" onclick="toggleDropdown('cv-projects')">
+        Computer Vision <span class="expand-icon">+</span>
+      </div>
+      <div class="project-details" id="cv-projects">
+        <div class="block">
+          <h4>PLANT CLASSIFICATION USING LEAVES</h4>
+          <p>
+            Correctly classifying plant species is crucial for ecological and
+            conservation efforts, yet traditional machine learning approaches
+            rely on manually extracted features, which can be limiting. Our
+            study focuses on automating the classification of 10 plant species
+            native to India using advanced deep learning techniques. We found
+            that ResNet-50 outperformed the other models, significantly
+            improving the precision and effectiveness of plant classification
+            tasks.
+          </p>
+          <a href="https://github.com/ayushjaincr7/PLANT-CLASSIFICATION-USING-LEAVES" target="_blank">View on GitHub</a>
+          <hr />
+        </div>
+
+        <div>
+          <h4>Automatic Number Plate Recognition</h4>
+          <p>
+            This project focuses on the automatic detection of vehicles and
+            recognition of their license plates from video frames, leveraging
+            cutting-edge computer vision techniques. The approach uses YOLOv8
+            for vehicle detection and EasyOCR for text recognition of license
+            plates.
+          </p>
+          <a href="https://github.com/ayushjaincr7/NumberPlateRecognition" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Natural Language Processing Category -->
+    <div class="project-category">
+      <div class="project-title" onclick="toggleDropdown('nlp-projects')">
+        Natural Language Processing (NLP) <span class="expand-icon">+</span>
+      </div>
+      <div class="project-details" id="nlp-projects">
+        <p>Update soon...</p>
+      </div>
+    </div>
+
+    <!-- Generative AI Category -->
+    <div class="project-category">
+      <div class="project-title" onclick="toggleDropdown('genai-projects')">
+        Generative AI <span class="expand-icon">+</span>
+      </div>
+      <div class="project-details" id="genai-projects">
+        <div class="block">
+          <h4>YouTube Notes Maker</h4>
+          <p>
+            This application simplifies the process of summarizing YouTube
+            videos by leveraging LangChain and youtube_transcript_api. The
+            transcript is processed and summarized using a language model
+            (LLM), offering users a clean and accessible way to capture key
+            points from videos.
+          </p>
+          <a href="https://github.com/ayushjaincr7/youtube_notes_maker" target="_blank">View on GitHub</a>
+          <hr />
+
+          <h4>Multilingual AI Assistant</h4>
+          <p>
+            This application is a voice-powered chatbot that
+            supports multiple languages, enabling natural interaction through
+            speech and text. Perfect for customer support, accessibility, and
+            education, it makes communication effortless and inclusive.
+          </p>
+          <a href="https://github.com/ayushjaincr7/youtube_notes_maker" target="_blank">View on GitHub</a>
+          <hr />
+
+          <h4>Chat with Multiple PDFs</h4>
+          <p>
+            This Streamlit app allows users to interact with multiple PDF documents by uploading them and asking
+            questions about their contents. The app processes the PDFs, splits the text, creates embeddings, and uses AI
+            to provide relevant answers based on the uploaded documents.
+          </p>
+          <a href="https://github.com/ayushjaincr7/youtube_notes_maker" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Software and Tools Development Category -->
+    <div class="project-category">
+      <div class="project-title" onclick="toggleDropdown('tools-projects')">
+        Software and Tools Development <span class="expand-icon">+</span>
+      </div>
+      <div class="project-details" id="tools-projects">
+        <p>Update soon...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleDropdown(projectId) {
+      const projectDetails = document.getElementById(projectId);
+      const expandIcon =
+        projectDetails.previousElementSibling.querySelector(".expand-icon");
+
+      if (projectDetails.style.display === "block") {
+        projectDetails.style.display = "none";
+        expandIcon.textContent = "+";
+      } else {
+        projectDetails.style.display = "block";
+        expandIcon.textContent = "-";
+      }
+    }
+  </script>
+
+  <!-- Time lIne -->
+
+  <section id="timeline">
+    <h1>Timeline</h1>
+    <p class="subtitle">A short summary of academics and experiences</p>
+
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>2020-2024</h3>
+          <h2>Meerut Institute of Engineering & Technology (MIET)</h2>
+          <p>
+            As an undergraduate student pursuing a Bachelor of Technology in
+            Computer Science Engineering with a specialization in Artificial
+            Intelligence and Machine Learning at MIET, I am passionate about
+            using technology to solve real-world problems. My studies have
+            equipped me with a solid foundation in computer science, focusing
+            on data analysis, machine learning algorithms, and intelligent
+            systems. I am excited to apply my skills to create innovative
+            solutions in AI.
+          </p>
+        </div>
+        <div class="timeline-icon google">
+          <img src="timeline/miet.png" alt="Google" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- certificate  -->
+
+  <section id="certi">
+    <h1>Certificates & Trainings</h1>
+    <div class="certificate-container">
+      <h2>My Certificates</h2>
+      <ul>
+        <li>
+          <a href="https://drive.google.com/file/d/13Tni5g5Fp2SKpYDF2aRt4AB7ELvozBDh/view" target="_blank">Data Science
+            Masters Pro 2024 (iNeuron)</a>
+
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1FwU8mg5lISekM_q80-CRURpktg7v0igS/view?usp=sharing"
+            target="_blank">Mastering Generative AI with OpenAI, LangChain, and LlamaIndex (iNeuron)</a>
+        </li>
+        <li>
+          <a href="https://www.freecodecamp.org/certification/Ayush_Jain7/data-analysis-with-python-v7"
+            target="_blank">Data Analysis with Python in freeCodeCamp</a>
+        </li>
+        <li>
+          <a href="https://www.freecodecamp.org/certification/Ayush_Jain7/scientific-computing-with-python-v7"
+            target="_blank">Scientific Computing with Python in freeCodeCamp</a>
+        </li>
+        <li>
+          <a href="https://www.freecodecamp.org/certification/Ayush_Jain7/javascript-algorithms-and-data-structures"
+            target="_blank">JavaScript in freeCodeCamp</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-container">
+      <p>
+        Email:
+        <a href="mailto:ja7ayush@gmail.com" id="link">ja7ayush@gmail.com</a> |
+        Phone: <a href="tel:+917351787808" id="link">7351787808</a> |
+        <a href="https://www.linkedin.com/in/ayush-jain-a96720250/" target="_blank" title="LinkedIn"
+          class="bi bi-linkedin"></a>
+        |
+        <a href="https://www.linkedin.com/in/ayush---jain07/" target="_blank" title="GitHub" class="bi bi-github"></a>
+        |
+        <a href="https://drive.google.com/uc?export=download&id=1IN7hzO0f0qQW-NPs_LDKuY7ZRkA9sMwB" download><i
+            class="bi bi-file-pdf"></i>Resume</a>
+      </p>
+    </div>
+  </section>
+</body>
+
 </html>
