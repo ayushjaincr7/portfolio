@@ -270,6 +270,8 @@
 
 
 /*################################################## Project Section  */
+
+
 body {
   font-family: Arial, sans-serif;
   background-color: #121212;
@@ -359,123 +361,125 @@ color: red;
   background-color: #444;
 }
 
-/* Timeline Section */
-.timeline {
-position: relative;
-padding: 20px 0;
+
+
+
+
+/* ##################################################  Timeline Section */
+
+
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #1d1f27;
+  color: #ddd;
+  margin: 0;
+  padding: 20px;
 }
 
+.timeline-title {
+  text-align: center;
+  font-size: 2.5em;
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.2em;
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+/* Timeline Container */
 .timeline-container {
-width: 80%;
-max-width: 1300px;
-margin: 0 auto;
-position: relative;
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
 }
 
-/* Timeline Item Styles */
+/* Timeline Item */
 .timeline-item {
-display: flex;
-justify-content: space-between;
-margin: 50px 0;
-transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  background: #2a2d36;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .timeline-item:hover {
-transform: translateY(-5px); /* Slight elevation on hover */
+  transform: translateY(-8px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.4);
 }
 
-.timeline-item .timeline-content {
-width: 45%;
-background: #2b2b2b; /* Darker background for content */
-padding: 25px;
-border-radius: 12px;
-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-text-align: left;
-transition: background 0.3s ease, box-shadow 0.3s ease;
+/* Timeline Content */
+.timeline-content {
+  flex: 1;
+  margin-left: 20px;
 }
 
-.timeline-item .timeline-content:hover {
-background: #333; /* Slightly lighter on hover */
-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #aaa;
 }
 
-.timeline-item .timeline-content h3 {
-margin: 0;
-font-size: 1.1em;
-color: #bbb; /* Lighter color for small headings */
-font-weight: 500;
+.timeline-content h2 {
+  margin: 8px 0;
+  font-size: 1.7em;
+  color: #f39c12;
+  font-weight: bold;
 }
 
-.timeline-item .timeline-content h2 {
-margin: 10px 0;
-font-size: 1.5em;
-color: #f39c12; /* Highlighted color for the main title */
-font-weight: 600;
+.timeline-content p {
+  margin: 10px 0;
+  font-size: 1em;
+  line-height: 1.5;
 }
 
-.timeline-item .timeline-content p {
-margin: 15px 0;
-color: #ccc; /* Lighter text for paragraph */
-font-size: 1em;
-}
-
-.timeline-item .timeline-content a {
-text-decoration: none;
-color: #ff9800; /* Orange color for links */
-font-weight: 500;
-margin-top: 15px;
-display: block;
-transition: color 0.3s ease;
-}
-
-.timeline-item .timeline-content a:hover {
-color: #ffcc00; /* Yellow color on hover */
-}
-
-.timeline-item .timeline-icon {
-width: 12%;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-.timeline-item .timeline-icon img {
-max-width: 90%;
-border-radius: 50%;
-border: 3px solid #f39c12; /* Border around icons for emphasis */
-transition: transform 0.3s ease;
-}
-
-.timeline-item .timeline-icon img:hover {
-transform: scale(1.1); /* Slight zoom on hover */
-}
-
-/* Even Timeline Item Styles */
-.timeline-item:nth-child(even) .timeline-icon {
-order: 2;
-}
-
-.timeline-item:nth-child(even) .timeline-content {
-order: 1;
-}
-
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-.timeline-item {
-  flex-direction: column;
+/* Timeline Icon */
+.timeline-icon {
+  width: 80px;
+  height: 80px;
+  background: #333;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
-  margin: 30px 0;
+  justify-content: center;
+  transition: transform 0.3s ease;
 }
 
-.timeline-item .timeline-content {
-  width: 90%;
-  text-align: center;
+.timeline-icon:hover {
+  transform: scale(1.1);
 }
 
-.timeline-item .timeline-icon {
-  margin-top: 20px;
-  width: 35%;
+.timeline-icon img {
+  max-width: 70%;
+  border-radius: 50%;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .timeline-content {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .timeline-icon {
+    margin-bottom: 15px;
+  }
 }
 
 
@@ -483,56 +487,50 @@ order: 1;
 
 /* Certificate */
 
-/* General section styling */
+/* Global Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text for contrast */
+}
+
+/* Certificate Section */
 #certi {
-  padding: 50px;
-  background-color: #121212; /* Darker background for a deep dark mode */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  color: #f1f1f1; /* Light text color for contrast */
-  line-height: 1.6;
-}
-
-/* Main heading styling */
-#certi h1 {
-  font-size: 2.8rem;
+  padding: 60px 20px;
   text-align: center;
-  margin-bottom: 30px;
-  color: #f39c12; /* Golden color for the main heading */
-  font-weight: 700;
-  letter-spacing: 1.5px;
+  background-color: #121212;
+}
+
+#certi h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f39c12; /* Warm golden color */
+  font-weight: 600;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  border-bottom: 2px solid #f39c12;
-  padding-bottom: 10px;
-  transition: color 0.3s ease;
 }
 
-#certi h1:hover {
-  color: #f1f1f1; /* Hover effect to change the text color */
-}
-
-/* Container styling */
+/* Certificate Container */
 .certificate-container {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
-  background: #1f1f1f; /* Dark container background */
-  padding: 30px 40px;
+  background-color: #1e1e1e; /* Slightly lighter dark color */
+  padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Stronger shadow for depth */
-  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Section heading styling */
+/* Subheading */
 .certificate-container h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #f39c12; /* Golden color for subheadings */
-  font-weight: 600;
-  text-align: left;
-  border-bottom: 1px solid #f39c12;
-  padding-bottom: 8px;
+  color: #f39c12; /* Golden color for subheading */
+  font-weight: 500;
 }
 
-/* List styling */
+/* List Styling */
 .certificate-container ul {
   list-style: none;
   padding: 0;
@@ -540,52 +538,34 @@ order: 1;
 }
 
 .certificate-container li {
-  margin: 20px 0;
+  margin: 15px 0;
   font-size: 1.2rem;
-  color: #bbb; /* Light gray color for list items */
-  text-align: left;
-  transition: color 0.3s ease, transform 0.3s ease;
+  color: #bbb; /* Light gray text */
+  transition: all 0.3s ease;
 }
 
-/* Hover effect on list items */
-.certificate-container li:hover {
-  color: #f39c12; /* Golden color when hovering over list items */
-  transform: translateX(5px); /* Slight slide effect */
-}
-
-/* Link styling */
+/* Link Styling */
 .certificate-container li a {
-  color: #1e90ff; /* Bright blue color for links */
+  color: #1e90ff; /* Bright blue for links */
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+  font-weight: 500;
 }
 
 .certificate-container li a:hover {
-  color: #ff9800; /* Orange color on hover */
+  color: #ff9800; /* Orange on hover */
   text-decoration: underline;
 }
 
-/* "View" text styling */
-.certificate-container li a::after {
-  content: " ↗"; /* Adds an arrow after the link to indicate an external link */
-  font-size: 1rem;
-  color: #888;
+/* Hover Effect */
+.certificate-container li:hover {
+  transform: translateX(5px);
+  color: #f39c12;
 }
 
-/* Card hover effect */
-.certificate-container:hover {
-  transform: scale(1.02); /* Slight zoom effect on hover */
-}
-
-/* Responsive styling */
+/* Responsive Design */
 @media (max-width: 768px) {
-  #certi {
-    padding: 30px;
-  }
-
-  .certificate-container {
-    padding: 20px;
+  #certi h1 {
+    font-size: 2rem;
   }
 
   .certificate-container h2 {
@@ -595,12 +575,7 @@ order: 1;
   .certificate-container li {
     font-size: 1rem;
   }
-
-  .certificate-container li a::after {
-    font-size: 0.8rem;
-  }
 }
-
 
 
 /* contact */
@@ -612,31 +587,37 @@ order: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  background-color: #2c3e50;
+  padding: 40px;
+  background-color: #1c2833;
 }
 
 .contact-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 900px; /* Ensure it doesn't stretch too wide */
-  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  padding: 20px 30px;
   background-color: #34495e;
-  border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
   color: #ecf0f1;
-  font-family: Arial, sans-serif;
-  font-size: 0.9rem; /* Smaller text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
 }
 
 .contact-container p {
   margin: 0;
-  font-size: 0.9rem; /* Smaller text */
+  font-size: 1rem;
   color: #bdc3c7;
   font-weight: 500;
-  display: inline; /* Keep text in a single line */
+  display: inline-block;
+}
+
+.contact-container p span {
+  margin-right: 5px;
+  font-weight: bold;
+  color: #ecf0f1;
 }
 
 .contact-container p a {
@@ -644,6 +625,7 @@ order: 1;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
+  margin: 0 5px;
 }
 
 .contact-container p a:hover {
@@ -652,32 +634,32 @@ order: 1;
 }
 
 /* Icons Styling */
-.contact-container .social-icons a {
-  font-size: 1.5rem;
-  margin-left: 10px;
+.contact-container a.bi {
+  font-size: 1.8rem;
+  margin-left: 15px;
   color: #ecf0f1;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.contact-container .social-icons a:hover {
+.contact-container a.bi:hover {
   color: #ff8c00;
   transform: scale(1.1);
 }
 
-/* Responsive Design for smaller screens */
+/* Responsive Design */
 @media (max-width: 768px) {
   .contact-container {
-      flex-direction: row; /* Keep the layout in a single line on smaller screens */
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
+    flex-direction: column;
+    padding: 15px;
   }
 
   .contact-container p {
-      margin-right: 20px; /* Spacing between text items */
+    text-align: center;
+    font-size: 0.9rem;
   }
 
-  .contact-container .social-icons a {
-      font-size: 1.2rem;
+  .contact-container a.bi {
+    margin: 10px 5px;
+    font-size: 1.5rem;
   }
 }
