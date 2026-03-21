@@ -1,351 +1,744 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>____Portfolio____</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayush Jain | AIML Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+<body>
 
-  <body>
-    <nav class="navBar">
-      <a href="#skills" data-replace="Skills">
-        <span>Skills</span>
-      </a>
-      <a href="#projects" data-replace="Projects">
-        <span>Projects</span>
-      </a>
-      <a href="#timeline" data-replace="Timeline">
-        <span>Timeline</span>
-      </a>
-      <a href="#certi" data-replace="Certificate">
-        <span>Certificate</span>
-      </a>
-      <a href="#contact" data-replace="Contact">
-        <span>Contact</span>
-      </a>
-    </nav>
+<!-- ── NAVBAR ── -->
+<nav class="navBar" id="navBar">
+  <div class="nav-logo">AJ</div>
+  <div class="nav-links">
+    <a href="#hero">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#certi">Certs</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
 
-    <div class="about-me-container">
-      <div class="content">
-        <img src="pro.png" alt="Profile Picture" class="profile-pic" />
-        <div class="text">
-          <h1>About Me</h1>
-          <p>
-            Hello! My name is Ayush Jain. I’m a passionate learner and a fresher
-            machine learning engineer with hands on experiences in ML, NLP, and
-            computer vision. I enjoy solving real-world problems. Let’s build
-            something amazing together!
-          </p>
+<!-- ── HERO ── -->
+<section class="hero" id="hero">
+  <div class="hero-bg-glow"></div>
+  <div class="hero-inner">
+    
+    <!-- <div class="profile-pic-wrap">
+      <img src="pro.png" alt="Ayush Jain" class="profile-pic" />
+      <div class="pic-ring"></div>
+      <div class="pic-ring-2"></div>
+    </div> -->
+    
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> Available for opportunities
+      </div>
+      <h1>Hi, I'm <span class="gradient-text">Ayush Jain</span></h1>
+      <p class="hero-sub">
+        AI/ML Engineer focused on Core ML and RAG systems using Python, PyTorch, LangChain & LangGraph<br>
+        GATE DA 2026 
+        qualified with experience in NLP and Computer Vision.
+      </p>
+      <div class="hero-tags">
+        <span>🤖 Machine Learning</span>
+        <span>👁️ Computer Vision</span>
+        <span>💬 NLP</span>
+        <span>✨ Generative AI</span>
+      </div>
+      <div class="hero-ctas">
+        <a href="https://drive.google.com/uc?export=download&id=1IN7hzO0f0qQW-NPs_LDKuY7ZRkA9sMwB"
+           class="btn btn-primary" download>
+          <i class="bi bi-download"></i> Resume
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <i class="bi bi-chat-dots"></i> Contact
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num">7+</span>
+          <span class="hero-stat-lbl">Projects</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">200+</span>
+          <span class="hero-stat-lbl">LeetCode</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">5+</span>
+          <span class="hero-stat-lbl">Certificates</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">2</span>
+          <span class="hero-stat-lbl">Internships</span>
         </div>
       </div>
     </div>
+  </div>
+  <a href="#skills" class="hero-scroll-hint">
+    <i class="bi bi-chevron-double-down"></i>
+  </a>
+</section>
 
-    <!-- Skills Section -->
-    <div id="skills">
-      <h2>Skills</h2>
-      <div class="skill-list">
-        <div class="skill-item">
-          <h3>Programming</h3>
-          <p>Python, C++, Bash</p>
-        </div>
-        <div class="skill-item">
-          <h3>Databases</h3>
-          <p>SQL, MongoDB, VectorDB</p>
-        </div>
-        <div class="skill-item">
-          <h3>Python</h3>
-          <p>Flask, FastAPI, BeautifulScope, OpenCV, Streamlit, NLTK</p>
-        </div>
-        <div class="skill-item">
-          <h3>Machine Learning</h3>
-          <p>
-            Pytorch, Scikit-Learn, XGBoost, LangChain, HuggingFace Transformers
-          </p>
-        </div>
-        <div class="skill-item">
-          <h3>Data Analysitcs Tools</h3>
-          <p>Numpy, Pandas, Matplotlib, SciPy</p>
-        </div>
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="section-head fade-in">
+    <p class="section-label">What I work with</p>
+    <h2 class="section-title">Skills &amp; Technologies</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="skills-grid stagger">
+
+    <div class="skill-card">
+      <div class="skill-card-icon"><i class="bi bi-code-slash"></i></div>
+      <h3>Programming</h3>
+      <div class="skill-tags">
+        <span>Python</span><span>C++</span><span>Bash</span>
       </div>
     </div>
 
-    <!-- PROJECTS -->
+    <div class="skill-card">
+      <div class="skill-card-icon"><i class="bi bi-cpu"></i></div>
+      <h3>ML &amp; AI</h3>
+      <div class="skill-tags">
+        <span>Scikit-learn</span><span>XGBoost</span><span>PyTorch</span>
+        <span>HuggingFace</span><span>LangChain</span><span>LangGraph</span>
+        <span>spaCy</span><span>OpenCV</span>
+      </div>
+    </div>
 
-    <h1>Project Portfolio</h1>
-    <div id="project-tree" class="tree"></div>
+    <div class="skill-card">
+      <div class="skill-card-icon"><i class="bi bi-bar-chart"></i></div>
+      <h3>Data Analysis</h3>
+      <div class="skill-tags">
+        <span>NumPy</span><span>Pandas</span>
+        <span>Matplotlib</span><span>Seaborn</span><span>SciPy</span>
+      </div>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="skill-card">
+      <div class="skill-card-icon"><i class="bi bi-database"></i></div>
+      <h3>Databases</h3>
+      <div class="skill-tags">
+        <span>MySQL</span><span>MongoDB</span>
+        <span>Vector DB</span><span>FAISS</span>
+      </div>
+    </div>
 
-    <!-- JavaScript -->
-    <script>
-      const projects = {
-        ML: {
-          Regression: [
-            {
-              name: "Diamond Price Predictor 💎",
-              link: "https://github.com/ayushjaincr7/diamond_price_prediction",
-              info: "Diamond Price Prediction is a machine learning-based web app that estimates diamond prices using attributes like carat, cut,\
-                    color, clarity, and dimensions. It utilizes a regression model trained on a cleaned diamonds dataset, with a user-friendly Flask interface\
-                    for instant price predictions.",
-            },
-          ],
-          Classification: [],
-          Clustering: [
-            {
-              name: "Customer Segmentation Dashboard",
-              link: "https://github.com/ayushjaincr7/Customer_Segmentation_Dashboard",
-              info: "The Customer Segmentation Dashboard leverages machine learning and data visualization techniques to analyze and \
-              segment customers based on transactional data. The dashboard enables users to upload CSV or Excel files containing customer \
-              information, such as purchase frequency, recency, and monetary value. These features are processed, and customers are grouped \
-              into clusters using the KMeans algorithm. The clusters are then visualized using Principal Component Analysis (PCA) to reduce \
-              dimensionality and plot the clusters in a 2D space.",
-            },
-          ],
-        },
-        CV: {
-          Classification: [
-            {
-              name: "Plant classification Using Leaves",
-              link: "https://github.com/ayushjaincr7/PLANT-CLASSIFICATION-USING-LEAVES",
-              info: "Correctly classifying plant species is crucial for ecological and conservation efforts, yet traditional machine learning \
-              approaches rely on manually extracted features, which can be limiting. Our study focuses on automating the classification of 10 \
-              plant species native to India using advanced deep learning techniques. We found that ResNet-50 outperformed the other models, \
-              significantly improving the precision and effectiveness of plant classification tasks.",
-            },
-          ],
-          "Object Detection": [
-            {
-              name: "Automatic Number Plate Recognition",
-              link: "https://github.com/ayushjaincr7/NumberPlateRecognition",
-              info: "This project focuses on the automatic detection of vehicles and recognition of their license plates from video \
-              frames, leveraging cutting-edge computer vision techniques. The approach uses YOLOv8 for vehicle detection and EasyOCR for \
-              text recognition of license plates.",
-            },
-          ],
-          "Image Segmentation": [],
-        },
-        NLP: {
-          "Text Classification": [],
-          "Language Modeling": [],
-        },
-        GenAI: {
-          "Retrieval-Augmented Generation": [
-            {
-              name: "YouTube Notes Maker",
-              link: "https://github.com/ayushjaincr7/youtube_notes_maker",
-              info: "This application simplifies the process of summarizing YouTube videos by leveraging LangChain and \
-              youtube_transcript_api. The transcript is processed and summarized using a language model (LLM), offering users a clean \
-              and accessible way to capture key points from videos.",
-            },
-            {
-              name: "Multilingual AI Assistant",
-              link: "https://github.com/ayushjaincr7/multilingual_ai_assistant",
-              info: "This application is a voice-powered chatbot that supports multiple languages, enabling natural interaction through \
-              speech and text. Perfect for customer support, accessibility, and education, it makes communication effortless and inclusive.",
-            },
-            {
-              name: "Chat With Multiple PDFS",
-              link: "https://github.com/ayushjaincr7/docqa",
-              info: "This Streamlit app allows users to interact with multiple PDF documents by uploading them and asking questions about\
-              their contents. The app processes the PDFs, splits the text, creates embeddings, and uses AI to provide relevant answers\
-              based on the uploaded documents.",
-            },
-          ],
-          "Image Generation": [],
-        },
-      };
+    <div class="skill-card">
+      <div class="skill-card-icon"><i class="bi bi-braces"></i></div>
+      <h3>Frameworks &amp; Tools</h3>
+      <div class="skill-tags">
+        <span>Flask</span><span>FastAPI</span><span>Streamlit</span>
+        <span>Docker</span><span>DVC</span><span>GitHub Actions</span>
+      </div>
+    </div>
 
-      function createTree(container, obj) {
-        for (const key in obj) {
-          const node = document.createElement("div");
-          node.className = "node";
-          node.innerHTML = `<span class="icon">&#9654;</span>${key}`;
-          container.appendChild(node);
+    <div class="skill-card">
+      <div class="skill-card-icon"><i class="bi bi-stars"></i></div>
+      <h3>Deep Learning</h3>
+      <div class="skill-tags">
+        <span>ANN</span><span>CNN</span><span>RNN/LSTM</span>
+        <span>GRU</span><span>Transformer</span><span>GAN</span><span>Autoencoder</span>
+      </div>
+    </div>
 
-          const subTree = document.createElement("div");
-          subTree.className = "hidden";
-          container.appendChild(subTree);
+  </div>
+</section>
 
-          node.addEventListener("click", () => {
-            const icon = node.querySelector(".icon");
-            subTree.classList.toggle("hidden");
-            icon.classList.toggle("rotate");
-          });
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="section-head fade-in">
+    <p class="section-label">What I've built</p>
+    <h2 class="section-title">Project Portfolio</h2>
+    <div class="divider"></div>
+  </div>
 
-          if (typeof obj[key] === "object") {
-            createSubTree(subTree, obj[key]);
-          }
-        }
-      }
+  <!-- Filter Tabs — all categories shown even if empty -->
+  <div class="proj-tabs fade-in">
+    <button class="proj-tab active" data-filter="all">
+      <i class="bi bi-grid-3x3-gap"></i> All
+    </button>
+    <button class="proj-tab" data-filter="ml">🧠 ML</button>
+    <button class="proj-tab" data-filter="cv">👁️ Computer Vision</button>
+    <button class="proj-tab" data-filter="nlp">💬 NLP</button>
+    <button class="proj-tab" data-filter="genai">✨ Generative AI</button>
+    <button class="proj-tab" data-filter="dl">🔬 Deep Learning</button>
+    <button class="proj-tab" data-filter="data">📊 Data Science</button>
+  </div>
 
-      function createSubTree(container, subObj) {
-        for (const key in subObj) {
-          const subnode = document.createElement("div");
-          subnode.className = "subnode";
-          subnode.innerHTML = `<span class="icon">&#9654;</span>${key}`;
-          container.appendChild(subnode);
+  <div class="proj-count fade-in">
+    <span id="proj-count-label">Showing all 7 projects</span>
+  </div>
 
-          const projectList = document.createElement("div");
-          projectList.className = "hidden";
-          container.appendChild(projectList);
+  <div class="proj-grid stagger" id="proj-grid">
 
-          subnode.addEventListener("click", () => {
-            const icon = subnode.querySelector(".icon");
-            projectList.classList.toggle("hidden");
-            icon.classList.toggle("rotate");
-          });
+    <!-- ── ML ── -->
+    <div class="proj-card" data-cat="ml">
+      <div class="proj-card-top">
+        <span class="proj-badge ml">🧠 ML · Regression</span>
+        <a href="https://github.com/ayushjaincr7/diamond_price_prediction"
+           target="_blank" class="proj-gh-link">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+      <h3>Diamond Price Predictor 💎</h3>
+      <p>ML web app estimating diamond prices (carat, cut, color, clarity).
+         Decision Tree model — R² score <strong>0.9541</strong>.
+         CI/CD via GitHub Actions.</p>
+      <div class="proj-tags">
+        <span>Python</span><span>Flask</span>
+        <span>Scikit-learn</span><span>Pandas</span><span>GitHub Actions</span>
+      </div>
+      <div class="proj-footer">
+        <a href="https://github.com/ayushjaincr7/diamond_price_prediction"
+           target="_blank" class="proj-cta">
+          View Project <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
 
-          subObj[key].forEach((project) => {
-            const leaf = document.createElement("div");
-            leaf.className = "leaf";
-            leaf.textContent = project.name;
+    <div class="proj-card" data-cat="ml">
+      <div class="proj-card-top">
+        <span class="proj-badge ml">🧠 ML · Clustering</span>
+        <a href="https://github.com/ayushjaincr7/Customer_Segmentation_Dashboard"
+           target="_blank" class="proj-gh-link">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+      <h3>Customer Segmentation Dashboard</h3>
+      <p>Segments customers from CSV/Excel using KMeans clustering.
+         PCA reduces dimensions for interactive 2D cluster visualisation.</p>
+      <div class="proj-tags">
+        <span>KMeans</span><span>PCA</span>
+        <span>Streamlit</span><span>Scikit-learn</span>
+      </div>
+      <div class="proj-footer">
+        <a href="https://github.com/ayushjaincr7/Customer_Segmentation_Dashboard"
+           target="_blank" class="proj-cta">
+          View Project <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
 
-            // Tooltip for hover info
-            const tooltip = document.createElement("span");
-            tooltip.className = "tooltip";
-            tooltip.textContent = project.info;
-            tooltip.style.visibility = "hidden"; // Hidden by default
+    <!-- ── CV ── -->
+    <div class="proj-card" data-cat="cv">
+      <div class="proj-card-top">
+        <span class="proj-badge cv">👁️ CV · Classification</span>
+        <a href="https://github.com/ayushjaincr7/PLANT-CLASSIFICATION-USING-LEAVES"
+           target="_blank" class="proj-gh-link">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+      <h3>Plant Classification Using Leaves 🌿</h3>
+      <p>Classifies 10 Indian plant species from leaf images.
+         ResNet-50 achieved <strong>95%+ accuracy</strong>,
+         outperforming VGG16 &amp; InceptionV3.</p>
+      <div class="proj-tags">
+        <span>PyTorch</span><span>ResNet-50</span>
+        <span>Transfer Learning</span><span>Flask</span><span>GitHub Actions</span>
+      </div>
+      <div class="proj-footer">
+        <a href="https://github.com/ayushjaincr7/PLANT-CLASSIFICATION-USING-LEAVES"
+           target="_blank" class="proj-cta">
+          View Project <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
 
-            leaf.appendChild(tooltip);
+    <div class="proj-card" data-cat="cv">
+      <div class="proj-card-top">
+        <span class="proj-badge cv">👁️ CV · Detection</span>
+        <a href="https://github.com/ayushjaincr7/NumberPlateRecognition"
+           target="_blank" class="proj-gh-link">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+      <h3>Automatic Number Plate Recognition 🚗</h3>
+      <p>Detects vehicles in video frames with YOLOv8 and reads
+         license plate text in real-time using EasyOCR.</p>
+      <div class="proj-tags">
+        <span>YOLOv8</span><span>EasyOCR</span><span>OpenCV</span><span>Python</span>
+      </div>
+      <div class="proj-footer">
+        <a href="https://github.com/ayushjaincr7/NumberPlateRecognition"
+           target="_blank" class="proj-cta">
+          View Project <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
 
-            // Show tooltip on hover
-            leaf.addEventListener("mouseover", () => {
-              tooltip.style.visibility = "visible";
-            });
+    <!-- ── GenAI ── -->
+    <div class="proj-card" data-cat="genai">
+      <div class="proj-card-top">
+        <span class="proj-badge genai">✨ GenAI · RAG</span>
+        <a href="https://github.com/ayushjaincr7/youtube_notes_maker"
+           target="_blank" class="proj-gh-link">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+      <h3>YouTube Notes Maker 📝</h3>
+      <p>Fetches YouTube transcripts via <code>youtube_transcript_api</code>
+         and generates concise notes using LangChain + LLM pipeline.</p>
+      <div class="proj-tags">
+        <span>LangChain</span><span>LLM</span><span>Python</span><span>Streamlit</span>
+      </div>
+      <div class="proj-footer">
+        <a href="https://github.com/ayushjaincr7/youtube_notes_maker"
+           target="_blank" class="proj-cta">
+          View Project <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
 
-            // Hide tooltip when hover ends
-            leaf.addEventListener("mouseout", () => {
-              tooltip.style.visibility = "hidden";
-            });
+    <div class="proj-card" data-cat="genai">
+      <div class="proj-card-top">
+        <span class="proj-badge genai">✨ GenAI · Assistant</span>
+        <a href="https://github.com/ayushjaincr7/multilingual_ai_assistant"
+           target="_blank" class="proj-gh-link">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+      <h3>Multilingual AI Assistant 🌍</h3>
+      <p>Voice-powered chatbot supporting multiple languages via STT/TTS.
+         Ideal for customer support, accessibility &amp; education.</p>
+      <div class="proj-tags">
+        <span>LangChain</span><span>STT/TTS</span>
+        <span>Multilingual</span><span>NLP</span>
+      </div>
+      <div class="proj-footer">
+        <a href="https://github.com/ayushjaincr7/multilingual_ai_assistant"
+           target="_blank" class="proj-cta">
+          View Project <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
 
-            leaf.addEventListener("click", (e) => {
-              e.stopPropagation();
-              window.open(project.link, "_blank");
-            });
+    <div class="proj-card" data-cat="genai">
+      <div class="proj-card-top">
+        <span class="proj-badge genai">✨ GenAI · RAG</span>
+        <a href="https://github.com/ayushjaincr7/docqa"
+           target="_blank" class="proj-gh-link">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+      <h3>Chat With Multiple PDFs 📚</h3>
+      <p>Upload PDFs and ask natural-language questions using FAISS
+         vector embeddings + Google GenAI via a Streamlit interface.</p>
+      <div class="proj-tags">
+        <span>Streamlit</span><span>FAISS</span>
+        <span>LangChain</span><span>Google GenAI</span>
+      </div>
+      <div class="proj-footer">
+        <a href="https://github.com/ayushjaincr7/docqa"
+           target="_blank" class="proj-cta">
+          View Project <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
 
-            projectList.appendChild(leaf);
-          });
-        }
-      }
+  </div>
 
-      createTree(document.getElementById("project-tree"), projects);
-    </script>
+  <!-- Empty state shown when a tab has no matching projects -->
+  <div class="proj-empty" id="proj-empty">
+    <div class="proj-empty-icon">🚧</div>
+    <h3>Coming Soon</h3>
+    <p>Projects in this category are under active development. Check back soon!</p>
+  </div>
 
-    <!-- Time lIne -->
+</section>
 
-    <section id="timeline">
-      <h1 class="timeline-title">Timeline</h1>
-      <p class="subtitle">A short summary of academics and experiences</p>
+<!-- ── TIMELINE ── -->
+<section id="timeline">
+  <div class="section-head fade-in">
+    <p class="section-label">My journey</p>
+    <h2 class="section-title">Experience &amp; Education</h2>
+    <div class="divider"></div>
+  </div>
 
-      <div class="timeline-container">
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <img src="timeline/miet.png" alt="MIET Logo" />
+  <div class="tl-journey">
+
+    <!-- ══ 1. Infosys — Current ══ -->
+    <div class="tl-step fade-in tl-active">
+      <div class="tl-logo-wrap">
+
+        <!-- Infosys logo -->
+        <div class="tl-logo tl-logo--white">
+          <img src="timeline/infosys.png">
+        </div>
+
+        <div class="tl-step-meta">
+          <div class="tl-meta-top-row">
+            <span class="tl-type-badge tl-work">
+              <i class="bi bi-briefcase-fill"></i> Work
+            </span>
+            <span class="tl-current-chip">
+              <span class="badge-dot"></span> Current
+            </span>
           </div>
-          <div class="timeline-content">
-            <h3>2020 - 2024</h3>
-            <h2>Meerut Institute of Engineering & Technology (MIET)</h2>
-            <p>
-              As an undergraduate student pursuing a Bachelor of Technology in
-              Computer Science Engineering with a specialization in Artificial
-              Intelligence and Machine Learning at MIET, I am passionate about
-              using technology to solve real-world problems. My studies have
-              equipped me with a solid foundation in computer science, focusing
-              on data analysis, machine learning algorithms, and intelligent
-              systems. I am excited to apply my skills to create innovative
-              solutions in AI.
-            </p>
+          <h3>Infosys</h3>
+          <span class="tl-role">AI Intern</span>
+          <div class="tl-meta-row">
+            <span class="tl-date">
+              <i class="bi bi-calendar3"></i> July 2025 – Present
+            </span>
+            <span class="tl-location">
+              <i class="bi bi-geo-alt-fill"></i> Bhubaneswar, Odisha
+            </span>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- certificate  -->
+      <ul class="tl-bullets">
+        <li>Completed 6 months of Infosys training in Java, DSA, DBMS, and AIML specialization.</li>
+        <li>Built and trained ML models using NumPy, Pandas, Scikit-learn, and PyTorch.</li>
+        <li>Implemented deep learning architectures including ANN, CNN, RNN/LSTM, Autoencoders, and GANs.</li>
+        <li>Currently working on AI agentic projects and building pipelines using LLMs.</li>
+      </ul>
 
-    <section id="certi">
-      <h1>Certificates & Trainings</h1>
-      <div class="certificate-container">
-        <h2>My Certificates</h2>
-        <ul>
-          <li>
-            <a
-              href="https://drive.google.com/file/d/13Tni5g5Fp2SKpYDF2aRt4AB7ELvozBDh/view"
-              target="_blank"
-            >
-              Data Science Masters Pro 2024 (iNeuron)
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://drive.google.com/file/d/1FwU8mg5lISekM_q80-CRURpktg7v0igS/view?usp=sharing"
-              target="_blank"
-            >
-              Mastering Generative AI with OpenAI, LangChain, and LlamaIndex
-              (iNeuron)
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.freecodecamp.org/certification/Ayush_Jain7/data-analysis-with-python-v7"
-              target="_blank"
-            >
-              Data Analysis with Python (freeCodeCamp)
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.freecodecamp.org/certification/Ayush_Jain7/scientific-computing-with-python-v7"
-              target="_blank"
-            >
-              Scientific Computing with Python (freeCodeCamp)
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.freecodecamp.org/certification/Ayush_Jain7/javascript-algorithms-and-data-structures"
-              target="_blank"
-            >
-              JavaScript Algorithms and Data Structures (freeCodeCamp)
-            </a>
-          </li>
-        </ul>
+      <div class="tl-skills">
+        <span>Python</span><span>PyTorch</span><span>Scikit-learn</span>
+        <span>Deep Learning</span><span>EDA</span><span>LangChain</span>
+        <span>LangGraph</span>
       </div>
-    </section>
+    </div>
 
-    <section id="contact">
-      <div class="contact-container">
-        <p>
-          <span>Email:</span>
-          <a href="mailto:ja7ayush@gmail.com" id="link">ja7ayush@gmail.com</a> |
-          <span>Phone:</span>
-          <a href="tel:+917351787808" id="link">7351787808</a> |
-          <a
-            href="https://www.linkedin.com/in/ayush-jain-a96720250/"
-            target="_blank"
-            title="LinkedIn"
-            class="bi bi-linkedin"
-          ></a>
-          |
-          <a
-            href="https://www.linkedin.com/in/ayush---jain07/"
-            target="_blank"
-            title="GitHub"
-            class="bi bi-github"
-          ></a>
-          |
-          <a
-            href="https://drive.google.com/uc?export=download&id=1IN7hzO0f0qQW-NPs_LDKuY7ZRkA9sMwB"
-            download
-          >
-            <i class="bi bi-file-pdf"></i> Resume
-          </a>
-        </p>
+    <!-- Arrow -->
+    <div class="tl-connector fade-in">
+      <div class="tl-conn-line"></div>
+      <div class="tl-conn-arrow"><i class="bi bi-arrow-down-circle-fill"></i></div>
+      <div class="tl-conn-line"></div>
+    </div>
+
+    <!-- ══ 2. Hubnex Labs ══ -->
+    <div class="tl-step fade-in">
+      <div class="tl-logo-wrap">
+
+        <div class="tl-logo tl-logo--dark">
+          <img src="timeline/hubnex.png">
+        </div>
+
+        <div class="tl-step-meta">
+          <div class="tl-meta-top-row">
+            <span class="tl-type-badge tl-work">
+              <i class="bi bi-briefcase-fill"></i> Work
+            </span>
+          </div>
+          <h3>Hubnex Labs</h3>
+          <span class="tl-role">AIML Intern</span>
+          <div class="tl-meta-row">
+            <span class="tl-date">
+              <i class="bi bi-calendar3"></i> Dec 2024 – May 2025
+            </span>
+            <span class="tl-location">
+              <i class="bi bi-geo-alt-fill"></i> Remote
+            </span>
+          </div>
+        </div>
       </div>
-    </section>
-  </body>
+
+      <ul class="tl-bullets">
+        <li>Built AI Interviewer Bot (LangChain + FAISS) over 50+ resumes —
+            latency reduced by <strong>~40%</strong>.</li>
+        <li>Designed 15+ Dialogflow CX flows with STT/TTS —
+            <strong>90%+</strong> voice accuracy.</li>
+        <li>Google GenAI follow-up questions tested in 20+ mock interviews —
+            relevance up <strong>~30%</strong>.</li>
+      </ul>
+
+      <div class="tl-skills">
+        <span>LangChain</span><span>FAISS</span>
+        <span>Dialogflow CX</span><span>Google GenAI</span><span>STT/TTS</span>
+      </div>
+    </div>
+
+    <!-- Arrow -->
+    <div class="tl-connector fade-in">
+      <div class="tl-conn-line"></div>
+      <div class="tl-conn-arrow"><i class="bi bi-arrow-down-circle-fill"></i></div>
+      <div class="tl-conn-line"></div>
+    </div>
+
+    <!-- ══ 3. MIET B.Tech ══ -->
+    <div class="tl-step fade-in">
+      <div class="tl-logo-wrap">
+
+        <div class="tl-logo tl-logo--dark">
+          <img src="timeline/miet.png">
+        </div>
+
+        <div class="tl-step-meta">
+          <div class="tl-meta-top-row">
+            <span class="tl-type-badge tl-edu">
+              <i class="bi bi-mortarboard-fill"></i> Education
+            </span>
+          </div>
+          <h3>Meerut Institute of Engineering &amp; Technology</h3>
+          <span class="tl-role">B.Tech — CSE (AI &amp; ML) · AKTU</span>
+          <div class="tl-meta-row">
+            <span class="tl-date">
+              <i class="bi bi-calendar3"></i> 2020 – 2024
+            </span>
+            <span class="tl-location">
+              <i class="bi bi-geo-alt-fill"></i> Meerut, UP
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <ul class="tl-bullets">
+        <li>Specialized in AI &amp; ML with strong foundations in Deep Learning, Computer Vision, NLP, and Algorithms.</li>
+        <li>Built end-to-end machine learning projects, covering data processing, model development, and evaluation.</li>
+        <li>Applied problem-solving skills through real-world use cases and academic projects.</li>
+        <li>Participated in national-level hackathons, gaining experience in collaborative and time-bound development.</li>
+      </ul>
+
+      <div class="tl-skills">
+        <span>Machine Learning</span><span>Deep Learning</span>
+        <span>Python</span><span>DSA</span>
+      </div>
+    </div>
+
+
+    
+
+  </div><!-- end tl-journey -->
+</section>
+
+<!-- ── CERTIFICATES ── -->
+<section id="certi">
+  <div class="section-head fade-in">
+    <p class="section-label">Continuous learning</p>
+    <h2 class="section-title">Certificates &amp; Achievements</h2>
+    <div class="divider"></div>
+  </div>
+
+  <div class="cert-grid stagger">
+
+    <a href="https://drive.google.com/file/d/13Tni5g5Fp2SKpYDF2aRt4AB7ELvozBDh/view"
+       target="_blank" class="cert-card">
+      <div class="cert-icon-wrap cert-ineuron">
+        <i class="bi bi-patch-check-fill"></i>
+      </div>
+      <div class="cert-info">
+        <p class="cert-name">Data Science Masters Pro 2024</p>
+        <p class="cert-issuer">iNeuron</p>
+      </div>
+      <i class="bi bi-arrow-up-right cert-arrow"></i>
+    </a>
+
+    <a href="https://drive.google.com/file/d/1FwU8mg5lISekM_q80-CRURpktg7v0igS/view"
+       target="_blank" class="cert-card">
+      <div class="cert-icon-wrap cert-ineuron">
+        <i class="bi bi-patch-check-fill"></i>
+      </div>
+      <div class="cert-info">
+        <p class="cert-name">Generative AI with LangChain &amp; LlamaIndex</p>
+        <p class="cert-issuer">iNeuron</p>
+      </div>
+      <i class="bi bi-arrow-up-right cert-arrow"></i>
+    </a>
+
+    <a href="https://www.freecodecamp.org/certification/Ayush_Jain7/data-analysis-with-python-v7"
+       target="_blank" class="cert-card">
+      <div class="cert-icon-wrap cert-fcc">
+        <i class="bi bi-patch-check-fill"></i>
+      </div>
+      <div class="cert-info">
+        <p class="cert-name">Data Analysis with Python</p>
+        <p class="cert-issuer">freeCodeCamp</p>
+      </div>
+      <i class="bi bi-arrow-up-right cert-arrow"></i>
+    </a>
+
+    <a href="https://www.freecodecamp.org/certification/Ayush_Jain7/scientific-computing-with-python-v7"
+       target="_blank" class="cert-card">
+      <div class="cert-icon-wrap cert-fcc">
+        <i class="bi bi-patch-check-fill"></i>
+      </div>
+      <div class="cert-info">
+        <p class="cert-name">Scientific Computing with Python</p>
+        <p class="cert-issuer">freeCodeCamp</p>
+      </div>
+      <i class="bi bi-arrow-up-right cert-arrow"></i>
+    </a>
+
+    <a href="https://www.freecodecamp.org/certification/Ayush_Jain7/javascript-algorithms-and-data-structures"
+       target="_blank" class="cert-card">
+      <div class="cert-icon-wrap cert-fcc">
+        <i class="bi bi-patch-check-fill"></i>
+      </div>
+      <div class="cert-info">
+        <p class="cert-name">JavaScript Algorithms &amp; Data Structures</p>
+        <p class="cert-issuer">freeCodeCamp</p>
+      </div>
+      <i class="bi bi-arrow-up-right cert-arrow"></i>
+    </a>
+
+    <a href="https://drive.google.com/file/d/1GLZKjhwSZuuwh5-KwTJHQRzB5krcja95/view?usp=sharing"
+       target="_blank" class="cert-card">
+      <div class="cert-icon-wrap cert-infosys">
+        <i class="bi bi-patch-check-fill"></i>
+      </div>
+      <div class="cert-info">
+        <p class="cert-name">Infosys Certified Machine Learning Professional </p>
+        <p class="cert-issuer">Infosys Lex</p>
+      </div>
+      <i class="bi bi-arrow-up-right cert-arrow"></i>
+    </a>
+
+    <a href="https://drive.google.com/file/d/1o_MWnYqlhQr0RJCqtFtYZ-uWmkmiRSsn/view?usp=sharing"
+       target="_blank" class="cert-card">
+      <div class="cert-icon-wrap cert-infosys">
+        <i class="bi bi-patch-check-fill"></i>
+      </div>
+      <div class="cert-info">
+        <p class="cert-name">Infosys Certified Data Science using Python Professional-Part1 </p>
+        <p class="cert-issuer">Infosys Lex</p>
+      </div>
+      <i class="bi bi-arrow-up-right cert-arrow"></i>
+    </a>
+
+
+    <!-- LeetCode achievement -->
+    <div class="cert-card cert-card--plain">
+      <div class="cert-icon-wrap cert-leet">
+        <i class="bi bi-trophy-fill"></i>
+      </div>
+      <div class="cert-info">
+        <p class="cert-name">200+ Problems Solved</p>
+        <p class="cert-issuer">LeetCode</p>
+      </div>
+      <span class="cert-badge-chip">Achievement</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="section-head fade-in">
+    <p class="section-label">Let's talk</p>
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="divider"></div>
+  </div>
+
+  <div class="contact-card fade-in">
+    <div class="contact-emoji">👋</div>
+    <h2>Open to new opportunities</h2>
+    <p>Whether you have a project, a question, or just want to say hi —
+       my inbox is always open.</p>
+
+    <div class="contact-links">
+      <a href="mailto:ja7ayush@gmail.com" class="contact-link">
+        <i class="bi bi-envelope-fill"></i> ja7ayush@gmail.com
+      </a>
+      <a href="tel:+917351787808" class="contact-link">
+        <i class="bi bi-telephone-fill"></i> +91 7351787808
+      </a>
+      <a href="https://www.linkedin.com/in/ayush-jain-a96720250/"
+         target="_blank" class="contact-link">
+        <i class="bi bi-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/ayushjaincr7"
+         target="_blank" class="contact-link">
+        <i class="bi bi-github"></i> GitHub
+      </a>
+    </div>
+
+    <a href="https://drive.google.com/uc?export=download&id=1IN7hzO0f0qQW-NPs_LDKuY7ZRkA9sMwB"
+       class="btn btn-primary" download>
+      <i class="bi bi-file-earmark-pdf"></i> Download Resume
+    </a>
+
+    <p class="footer-note">Designed &amp; built by Ayush Jain · 2025</p>
+  </div>
+</section>
+
+<!-- ── SCRIPTS ── -->
+<script>
+  /* ── Active nav ── */
+  const navLinks = document.querySelectorAll(".navBar a");
+  const sections = ["hero","skills","projects","timeline","certi","contact"]
+    .map(id => document.getElementById(id)).filter(Boolean);
+
+  function updateNav() {
+    let current = "";
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 130) current = s.id;
+    });
+    navLinks.forEach(a =>
+      a.classList.toggle("active", a.getAttribute("href") === "#" + current)
+    );
+  }
+  window.addEventListener("scroll", updateNav, { passive: true });
+  updateNav();
+
+  /* ── Hamburger ── */
+  const hamburger  = document.getElementById("hamburger");
+  const navLinksEl = document.querySelector(".nav-links");
+  hamburger.addEventListener("click", () => {
+    navLinksEl.classList.toggle("open");
+    hamburger.classList.toggle("active");
+  });
+  navLinks.forEach(a => a.addEventListener("click", () => {
+    navLinksEl.classList.remove("open");
+    hamburger.classList.remove("active");
+  }));
+
+  /* ── Scroll reveal ── */
+  const io = new IntersectionObserver(
+    entries => entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("visible"); io.unobserve(e.target); }
+    }),
+    { threshold: 0.07 }
+  );
+  document.querySelectorAll(".fade-in, .stagger, .tl-connector")
+    .forEach(el => io.observe(el));
+
+  /* ── Project filter ── */
+  const tabs    = document.querySelectorAll(".proj-tab");
+  const cards   = document.querySelectorAll(".proj-card");
+  const emptyEl = document.getElementById("proj-empty");
+  const countEl = document.getElementById("proj-count-label");
+
+  const tabLabels = {
+    all:"All", ml:"Machine Learning", cv:"Computer Vision",
+    nlp:"NLP", genai:"Generative AI", dl:"Deep Learning", data:"Data Science"
+  };
+
+  function filterProjects(f) {
+    let n = 0;
+    cards.forEach(c => {
+      const show = f === "all" || c.dataset.cat === f;
+      c.style.display = show ? "flex" : "none";
+      if (show) n++;
+    });
+    emptyEl.style.display = n === 0 ? "flex" : "none";
+    countEl.textContent = n === 0
+      ? `No projects in ${tabLabels[f]} yet — coming soon!`
+      : f === "all"
+        ? `Showing all ${n} projects`
+        : `Showing ${n} project${n > 1 ? "s" : ""} in ${tabLabels[f]}`;
+  }
+
+  tabs.forEach(tab => tab.addEventListener("click", () => {
+    tabs.forEach(t => t.classList.remove("active"));
+    tab.classList.add("active");
+    filterProjects(tab.dataset.filter);
+  }));
+
+  filterProjects("all");
+</script>
+</body>
 </html>
