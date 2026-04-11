@@ -9,16 +9,39 @@
 </head>
 <body>
 
+<!-- ── CURSOR GLOW (follows mouse) ── -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
 <!-- ── NAVBAR ── -->
 <nav class="navBar" id="navBar">
-  <div class="nav-logo">AJ</div>
-  <div class="nav-links">
-    <a href="#hero">Home</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#timeline">Timeline</a>
-    <a href="#certi">Certs</a>
-    <a href="#contact">Contact</a>
+  <div class="nav-logo">
+    <span class="logo-bracket">&lt;</span>AJ<span class="logo-bracket">/&gt;</span>
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="#hero" class="nav-link active">
+      <span class="nav-link-icon"><i class="bi bi-house"></i></span>
+      <span class="nav-link-text">Home</span>
+    </a>
+    <a href="#skills" class="nav-link">
+      <span class="nav-link-icon"><i class="bi bi-lightning"></i></span>
+      <span class="nav-link-text">Skills</span>
+    </a>
+    <a href="#projects" class="nav-link">
+      <span class="nav-link-icon"><i class="bi bi-rocket"></i></span>
+      <span class="nav-link-text">Projects</span>
+    </a>
+    <a href="#timeline" class="nav-link">
+      <span class="nav-link-icon"><i class="bi bi-clock-history"></i></span>
+      <span class="nav-link-text">Journey</span>
+    </a>
+    <a href="#certi" class="nav-link">
+      <span class="nav-link-icon"><i class="bi bi-award"></i></span>
+      <span class="nav-link-text">Certs</span>
+    </a>
+    <a href="#contact" class="nav-link">
+      <span class="nav-link-icon"><i class="bi bi-send"></i></span>
+      <span class="nav-link-text">Contact</span>
+    </a>
   </div>
   <div class="nav-hamburger" id="hamburger">
     <span></span><span></span><span></span>
@@ -27,718 +50,779 @@
 
 <!-- ── HERO ── -->
 <section class="hero" id="hero">
-  <div class="hero-bg-glow"></div>
-  <div class="hero-inner">
-    
-    <!-- <div class="profile-pic-wrap">
-      <img src="pro.png" alt="Ayush Jain" class="profile-pic" />
-      <div class="pic-ring"></div>
-      <div class="pic-ring-2"></div>
-    </div> -->
-    
-    <div class="hero-text">
-      <div class="hero-badge">
-        <span class="badge-dot"></span> Available for opportunities
-      </div>
-      <h1>Hi, I'm <span class="gradient-text">Ayush Jain</span></h1>
-      <p class="hero-sub">
-        AI/ML Engineer focused on Core ML and RAG systems using Python, PyTorch, LangChain & LangGraph<br>
-        GATE DA 2026 
-        qualified with experience in NLP and Computer Vision.
-      </p>
-      <div class="hero-tags">
-        <span>🤖 Machine Learning</span>
-        <span>👁️ Computer Vision</span>
-        <span>💬 NLP</span>
-        <span>✨ Generative AI</span>
-      </div>
-      <div class="hero-ctas">
-        <a href="https://drive.google.com/uc?export=download&id=1zpQblm-h2TopaIHbMpweIptPMADrvXxL"
-           class="btn btn-primary" download>
-          <i class="bi bi-download"></i> Resume
-        </a>
-        <a href="#contact" class="btn btn-ghost">
-          <i class="bi bi-chat-dots"></i> Contact
-        </a>
+  <!-- Animated background -->
+  <div class="hero-cosmos">
+    <div class="cosmos-orb cosmos-orb-1"></div>
+    <div class="cosmos-orb cosmos-orb-2"></div>
+    <div class="cosmos-orb cosmos-orb-3"></div>
+    <div class="hero-grid-bg"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-badge-row">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>Available for opportunities</span>
+        </div>
+        <div class="gate-badge">
+          <i class="bi bi-trophy-fill"></i> GATE DA 2026
+        </div>
       </div>
 
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <span class="hero-stat-num">7+</span>
-          <span class="hero-stat-lbl">Projects</span>
-        </div>
-        <div class="hero-stat-divider"></div>
-        <div class="hero-stat">
-          <span class="hero-stat-num">200+</span>
-          <span class="hero-stat-lbl">LeetCode</span>
-        </div>
-        <div class="hero-stat-divider"></div>
-        <div class="hero-stat">
-          <span class="hero-stat-num">5+</span>
-          <span class="hero-stat-lbl">Certificates</span>
-        </div>
-        <div class="hero-stat-divider"></div>
-        <div class="hero-stat">
-          <span class="hero-stat-num">2</span>
-          <span class="hero-stat-lbl">Internships</span>
+      <h1 class="hero-title">
+        <span class="title-line title-line-1">Hi, I'm</span>
+        <span class="title-line title-line-2">
+          <span class="name-gradient">Ayush</span>
+          <span class="name-gradient name-gradient-2">Jain</span>
+        </span>
+        <span class="title-line title-line-3">
+          <span class="role-text">AI/ML Engineer</span>
+          <span class="role-cursor">|</span>
+        </span>
+      </h1>
+
+      <p class="hero-desc">
+        Building intelligent systems with
+        <span class="highlight-word">Core ML</span>,
+        <span class="highlight-word">RAG pipelines</span>, and
+        <span class="highlight-word">Computer Vision</span>
+        using Python, PyTorch, LangChain & LangGraph.
+      </p>
+
+      <div class="hero-chips">
+        <div class="chip chip-ml"><i class="bi bi-cpu"></i> Machine Learning</div>
+        <div class="chip chip-cv"><i class="bi bi-eye"></i> Computer Vision</div>
+        <div class="chip chip-nlp"><i class="bi bi-chat-left-text"></i> NLP</div>
+        <div class="chip chip-gen"><i class="bi bi-stars"></i> Generative AI</div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="https://drive.google.com/uc?export=download&id=1zpQblm-h2TopaIHbMpweIptPMADrvXxL"
+           class="btn-cosmic" download>
+          <span class="btn-bg"></span>
+          <i class="bi bi-download"></i>
+          <span>Download Resume</span>
+        </a>
+        <a href="#contact" class="btn-outline">
+          <i class="bi bi-chat-dots"></i>
+          <span>Let's Talk</span>
+        </a>
+        <div class="hero-social">
+          <a href="https://github.com/ayushjaincr7" target="_blank" class="social-orb">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ayush-jain-a96720250/" target="_blank" class="social-orb">
+            <i class="bi bi-linkedin"></i>
+          </a>
         </div>
       </div>
     </div>
+
+    <div class="hero-right">
+      <!-- Terminal-style card -->
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span class="terminal-title">ayush@portfolio:~</span>
+        </div>
+        <div class="terminal-body">
+          <div class="term-line">
+            <span class="term-prompt">$</span>
+            <span class="term-cmd">cat about.json</span>
+          </div>
+          <div class="term-output">
+            <span class="term-brace">{</span><br>
+            &nbsp;&nbsp;<span class="term-key">"projects"</span>: <span class="term-val">"7+"</span>,<br>
+            &nbsp;&nbsp;<span class="term-key">"leetcode"</span>: <span class="term-val">"200+"</span>,<br>
+            &nbsp;&nbsp;<span class="term-key">"certs"</span>: <span class="term-val">"5+"</span>,<br>
+            &nbsp;&nbsp;<span class="term-key">"internships"</span>: <span class="term-val">"2"</span>,<br>
+            &nbsp;&nbsp;<span class="term-key">"focus"</span>: <span class="term-str">"AI/ML & RAG"</span><br>
+            <span class="term-brace">}</span>
+          </div>
+          <div class="term-line">
+            <span class="term-prompt">$</span>
+            <span class="term-cursor">_</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating stat pills around terminal -->
+      <div class="float-pill pill-1">
+        <span class="pill-num">7+</span>
+        <span class="pill-label">Projects</span>
+      </div>
+      <div class="float-pill pill-2">
+        <span class="pill-num">200+</span>
+        <span class="pill-label">LeetCode</span>
+      </div>
+      <div class="float-pill pill-3">
+        <span class="pill-num">2</span>
+        <span class="pill-label">Internships</span>
+      </div>
+    </div>
   </div>
-  <a href="#skills" class="hero-scroll-hint">
-    <i class="bi bi-chevron-double-down"></i>
+
+  <a href="#skills" class="scroll-indicator">
+    <div class="scroll-mouse">
+      <div class="scroll-wheel"></div>
+    </div>
+    <span>Scroll to explore</span>
   </a>
 </section>
 
-<!-- ── SKILLS ── -->
+<!-- ── SKILLS — BENTO GRID ── -->
 <section id="skills">
-  <div class="section-head fade-in">
-    <p class="section-label">What I work with</p>
-    <h2 class="section-title">Skills &amp; Technologies</h2>
-    <div class="divider"></div>
+  <div class="section-header fade-in">
+    <div class="section-tag"><i class="bi bi-lightning-fill"></i> Tech Stack</div>
+    <h2>Skills & <span class="text-glow">Technologies</span></h2>
+    <p class="section-sub">The tools and technologies I use to bring ideas to life</p>
   </div>
-  <div class="skills-grid stagger">
 
-    <div class="skill-card">
-      <div class="skill-card-icon"><i class="bi bi-code-slash"></i></div>
-      <h3>Programming</h3>
-      <div class="skill-tags">
-        <span>Python</span><span>C++</span><span>Bash</span>
-      </div>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-card-icon"><i class="bi bi-cpu"></i></div>
-      <h3>ML &amp; AI</h3>
-      <div class="skill-tags">
+  <div class="bento-grid stagger">
+    <!-- Large card -->
+    <div class="bento-card bento-lg" data-tilt>
+      <div class="bento-glow"></div>
+      <div class="bento-icon"><i class="bi bi-cpu-fill"></i></div>
+      <h3>ML & AI</h3>
+      <p>Core expertise in building and deploying intelligent systems</p>
+      <div class="bento-tags">
         <span>Scikit-learn</span><span>XGBoost</span><span>PyTorch</span>
         <span>HuggingFace</span><span>LangChain</span><span>LangGraph</span>
         <span>spaCy</span><span>OpenCV</span>
       </div>
+      <div class="bento-pattern"></div>
     </div>
 
-    <div class="skill-card">
-      <div class="skill-card-icon"><i class="bi bi-bar-chart"></i></div>
-      <h3>Data Analysis</h3>
-      <div class="skill-tags">
-        <span>NumPy</span><span>Pandas</span>
-        <span>Matplotlib</span><span>Seaborn</span><span>SciPy</span>
+    <!-- Medium card -->
+    <div class="bento-card bento-md" data-tilt>
+      <div class="bento-glow"></div>
+      <div class="bento-icon bento-icon-cyan"><i class="bi bi-braces"></i></div>
+      <h3>Programming</h3>
+      <div class="bento-tags">
+        <span>Python</span><span>C++</span><span>Bash</span>
       </div>
     </div>
 
-    <div class="skill-card">
-      <div class="skill-card-icon"><i class="bi bi-database"></i></div>
-      <h3>Databases</h3>
-      <div class="skill-tags">
-        <span>MySQL</span><span>MongoDB</span>
-        <span>Vector DB</span><span>FAISS</span>
-      </div>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-card-icon"><i class="bi bi-braces"></i></div>
-      <h3>Frameworks &amp; Tools</h3>
-      <div class="skill-tags">
-        <span>Flask</span><span>FastAPI</span><span>Streamlit</span>
-        <span>Docker</span><span>DVC</span><span>GitHub Actions</span>
-      </div>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-card-icon"><i class="bi bi-stars"></i></div>
+    <!-- Medium card -->
+    <div class="bento-card bento-md" data-tilt>
+      <div class="bento-glow"></div>
+      <div class="bento-icon bento-icon-pink"><i class="bi bi-diagram-3-fill"></i></div>
       <h3>Deep Learning</h3>
-      <div class="skill-tags">
+      <div class="bento-tags">
         <span>ANN</span><span>CNN</span><span>RNN/LSTM</span>
         <span>GRU</span><span>Transformer</span><span>GAN</span><span>Autoencoder</span>
       </div>
     </div>
 
+    <!-- Small card -->
+    <div class="bento-card bento-sm" data-tilt>
+      <div class="bento-glow"></div>
+      <div class="bento-icon bento-icon-green"><i class="bi bi-bar-chart-fill"></i></div>
+      <h3>Data Analysis</h3>
+      <div class="bento-tags">
+        <span>NumPy</span><span>Pandas</span><span>Matplotlib</span>
+        <span>Seaborn</span><span>SciPy</span>
+      </div>
+    </div>
+
+    <!-- Small card -->
+    <div class="bento-card bento-sm" data-tilt>
+      <div class="bento-glow"></div>
+      <div class="bento-icon bento-icon-orange"><i class="bi bi-database-fill"></i></div>
+      <h3>Databases</h3>
+      <div class="bento-tags">
+        <span>MySQL</span><span>MongoDB</span><span>Vector DB</span><span>FAISS</span>
+      </div>
+    </div>
+
+    <!-- Wide card -->
+    <div class="bento-card bento-wide" data-tilt>
+      <div class="bento-glow"></div>
+      <div class="bento-icon bento-icon-yellow"><i class="bi bi-gear-fill"></i></div>
+      <h3>Frameworks & DevOps</h3>
+      <div class="bento-tags">
+        <span>Flask</span><span>FastAPI</span><span>Streamlit</span>
+        <span>Docker</span><span>DVC</span><span>GitHub Actions</span>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ── PROJECTS ── -->
 <section id="projects">
-  <div class="section-head fade-in">
-    <p class="section-label">What I've built</p>
-    <h2 class="section-title">Project Portfolio</h2>
-    <div class="divider"></div>
+  <div class="section-header fade-in">
+    <div class="section-tag"><i class="bi bi-rocket-takeoff-fill"></i> Portfolio</div>
+    <h2>Featured <span class="text-glow">Projects</span></h2>
+    <p class="section-sub">A collection of things I've built and shipped</p>
   </div>
 
-  <!-- Filter Tabs — all categories shown even if empty -->
-  <div class="proj-tabs fade-in">
-    <button class="proj-tab active" data-filter="all">
-      <i class="bi bi-grid-3x3-gap"></i> All
-    </button>
-    <button class="proj-tab" data-filter="ml">🧠 ML</button>
-    <button class="proj-tab" data-filter="cv">👁️ Computer Vision</button>
-    <button class="proj-tab" data-filter="nlp">💬 NLP</button>
-    <button class="proj-tab" data-filter="genai">✨ Generative AI</button>
-    <button class="proj-tab" data-filter="dl">🔬 Deep Learning</button>
-    <button class="proj-tab" data-filter="data">📊 Data Science</button>
+  <div class="filter-bar fade-in">
+    <div class="filter-track">
+      <button class="filter-btn active" data-filter="all">
+        <i class="bi bi-grid-3x3-gap-fill"></i> All
+        <span class="filter-count" id="count-all">7</span>
+      </button>
+      <button class="filter-btn" data-filter="ml">
+        🧠 ML
+        <span class="filter-count" id="count-ml">2</span>
+      </button>
+      <button class="filter-btn" data-filter="cv">
+        👁️ CV
+        <span class="filter-count" id="count-cv">2</span>
+      </button>
+      <button class="filter-btn" data-filter="genai">
+        ✨ GenAI
+        <span class="filter-count" id="count-genai">3</span>
+      </button>
+      <button class="filter-btn" data-filter="nlp">💬 NLP</button>
+      <button class="filter-btn" data-filter="dl">🔬 DL</button>
+      <button class="filter-btn" data-filter="data">📊 Data</button>
+    </div>
   </div>
 
-  <div class="proj-count fade-in">
-    <span id="proj-count-label">Showing all 7 projects</span>
-  </div>
+  <div class="project-showcase stagger" id="proj-grid">
 
-  <div class="proj-grid stagger" id="proj-grid">
+    <article class="project-card" data-cat="ml">
+      <div class="card-shine"></div>
+      <div class="card-header">
+        <span class="card-badge badge-ml">ML · Regression</span>
+        <a href="https://github.com/ayushjaincr7/diamond_price_prediction" target="_blank" class="card-link">
+          <i class="bi bi-box-arrow-up-right"></i>
+        </a>
+      </div>
+      <div class="card-body">
+        <h3>💎 Diamond Price Predictor</h3>
+        <p>ML web app estimating diamond prices based on carat, cut, color, clarity. Decision Tree model with R² score <strong>0.9541</strong>. CI/CD via GitHub Actions.</p>
+      </div>
+      <div class="card-techs">
+        <span>Python</span><span>Flask</span><span>Scikit-learn</span><span>Pandas</span><span>GitHub Actions</span>
+      </div>
+      <a href="https://github.com/ayushjaincr7/diamond_price_prediction" target="_blank" class="card-cta">
+        <span>Explore Project</span>
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </article>
 
-    <!-- ── ML ── -->
-    <div class="proj-card" data-cat="ml">
-      <div class="proj-card-top">
-        <span class="proj-badge ml">🧠 ML · Regression</span>
-        <a href="https://github.com/ayushjaincr7/diamond_price_prediction"
-           target="_blank" class="proj-gh-link">
-          <i class="bi bi-github"></i>
+    <article class="project-card" data-cat="ml">
+      <div class="card-shine"></div>
+      <div class="card-header">
+        <span class="card-badge badge-ml">ML · Clustering</span>
+        <a href="https://github.com/ayushjaincr7/Customer_Segmentation_Dashboard" target="_blank" class="card-link">
+          <i class="bi bi-box-arrow-up-right"></i>
         </a>
       </div>
-      <h3>Diamond Price Predictor 💎</h3>
-      <p>ML web app estimating diamond prices (carat, cut, color, clarity).
-         Decision Tree model — R² score <strong>0.9541</strong>.
-         CI/CD via GitHub Actions.</p>
-      <div class="proj-tags">
-        <span>Python</span><span>Flask</span>
-        <span>Scikit-learn</span><span>Pandas</span><span>GitHub Actions</span>
+      <div class="card-body">
+        <h3>📊 Customer Segmentation Dashboard</h3>
+        <p>Segments customers from CSV/Excel using KMeans clustering. PCA reduces dimensions for interactive 2D cluster visualisation.</p>
       </div>
-      <div class="proj-footer">
-        <a href="https://github.com/ayushjaincr7/diamond_price_prediction"
-           target="_blank" class="proj-cta">
-          View Project <i class="bi bi-arrow-right"></i>
-        </a>
+      <div class="card-techs">
+        <span>KMeans</span><span>PCA</span><span>Streamlit</span><span>Scikit-learn</span>
       </div>
-    </div>
+      <a href="https://github.com/ayushjaincr7/Customer_Segmentation_Dashboard" target="_blank" class="card-cta">
+        <span>Explore Project</span>
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </article>
 
-    <div class="proj-card" data-cat="ml">
-      <div class="proj-card-top">
-        <span class="proj-badge ml">🧠 ML · Clustering</span>
-        <a href="https://github.com/ayushjaincr7/Customer_Segmentation_Dashboard"
-           target="_blank" class="proj-gh-link">
-          <i class="bi bi-github"></i>
+    <article class="project-card" data-cat="cv">
+      <div class="card-shine"></div>
+      <div class="card-header">
+        <span class="card-badge badge-cv">CV · Classification</span>
+        <a href="https://github.com/ayushjaincr7/PLANT-CLASSIFICATION-USING-LEAVES" target="_blank" class="card-link">
+          <i class="bi bi-box-arrow-up-right"></i>
         </a>
       </div>
-      <h3>Customer Segmentation Dashboard</h3>
-      <p>Segments customers from CSV/Excel using KMeans clustering.
-         PCA reduces dimensions for interactive 2D cluster visualisation.</p>
-      <div class="proj-tags">
-        <span>KMeans</span><span>PCA</span>
-        <span>Streamlit</span><span>Scikit-learn</span>
+      <div class="card-body">
+        <h3>🌿 Plant Classification Using Leaves</h3>
+        <p>Classifies 10 Indian plant species from leaf images. ResNet-50 achieved <strong>95%+ accuracy</strong>, outperforming VGG16 & InceptionV3.</p>
       </div>
-      <div class="proj-footer">
-        <a href="https://github.com/ayushjaincr7/Customer_Segmentation_Dashboard"
-           target="_blank" class="proj-cta">
-          View Project <i class="bi bi-arrow-right"></i>
-        </a>
+      <div class="card-techs">
+        <span>PyTorch</span><span>ResNet-50</span><span>Transfer Learning</span><span>Flask</span>
       </div>
-    </div>
+      <a href="https://github.com/ayushjaincr7/PLANT-CLASSIFICATION-USING-LEAVES" target="_blank" class="card-cta">
+        <span>Explore Project</span>
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </article>
 
-    <!-- ── CV ── -->
-    <div class="proj-card" data-cat="cv">
-      <div class="proj-card-top">
-        <span class="proj-badge cv">👁️ CV · Classification</span>
-        <a href="https://github.com/ayushjaincr7/PLANT-CLASSIFICATION-USING-LEAVES"
-           target="_blank" class="proj-gh-link">
-          <i class="bi bi-github"></i>
+    <article class="project-card" data-cat="cv">
+      <div class="card-shine"></div>
+      <div class="card-header">
+        <span class="card-badge badge-cv">CV · Detection</span>
+        <a href="https://github.com/ayushjaincr7/NumberPlateRecognition" target="_blank" class="card-link">
+          <i class="bi bi-box-arrow-up-right"></i>
         </a>
       </div>
-      <h3>Plant Classification Using Leaves 🌿</h3>
-      <p>Classifies 10 Indian plant species from leaf images.
-         ResNet-50 achieved <strong>95%+ accuracy</strong>,
-         outperforming VGG16 &amp; InceptionV3.</p>
-      <div class="proj-tags">
-        <span>PyTorch</span><span>ResNet-50</span>
-        <span>Transfer Learning</span><span>Flask</span><span>GitHub Actions</span>
+      <div class="card-body">
+        <h3>🚗 Automatic Number Plate Recognition</h3>
+        <p>Detects vehicles in video frames with YOLOv8 and reads license plate text in real-time using EasyOCR.</p>
       </div>
-      <div class="proj-footer">
-        <a href="https://github.com/ayushjaincr7/PLANT-CLASSIFICATION-USING-LEAVES"
-           target="_blank" class="proj-cta">
-          View Project <i class="bi bi-arrow-right"></i>
-        </a>
-      </div>
-    </div>
-
-    <div class="proj-card" data-cat="cv">
-      <div class="proj-card-top">
-        <span class="proj-badge cv">👁️ CV · Detection</span>
-        <a href="https://github.com/ayushjaincr7/NumberPlateRecognition"
-           target="_blank" class="proj-gh-link">
-          <i class="bi bi-github"></i>
-        </a>
-      </div>
-      <h3>Automatic Number Plate Recognition 🚗</h3>
-      <p>Detects vehicles in video frames with YOLOv8 and reads
-         license plate text in real-time using EasyOCR.</p>
-      <div class="proj-tags">
+      <div class="card-techs">
         <span>YOLOv8</span><span>EasyOCR</span><span>OpenCV</span><span>Python</span>
       </div>
-      <div class="proj-footer">
-        <a href="https://github.com/ayushjaincr7/NumberPlateRecognition"
-           target="_blank" class="proj-cta">
-          View Project <i class="bi bi-arrow-right"></i>
-        </a>
-      </div>
-    </div>
+      <a href="https://github.com/ayushjaincr7/NumberPlateRecognition" target="_blank" class="card-cta">
+        <span>Explore Project</span>
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </article>
 
-    <!-- ── GenAI ── -->
-    <div class="proj-card" data-cat="genai">
-      <div class="proj-card-top">
-        <span class="proj-badge genai">✨ GenAI · RAG</span>
-        <a href="https://github.com/ayushjaincr7/youtube_notes_maker"
-           target="_blank" class="proj-gh-link">
-          <i class="bi bi-github"></i>
+    <article class="project-card" data-cat="genai">
+      <div class="card-shine"></div>
+      <div class="card-header">
+        <span class="card-badge badge-genai">GenAI · RAG</span>
+        <a href="https://github.com/ayushjaincr7/youtube_notes_maker" target="_blank" class="card-link">
+          <i class="bi bi-box-arrow-up-right"></i>
         </a>
       </div>
-      <h3>YouTube Notes Maker 📝</h3>
-      <p>Fetches YouTube transcripts via <code>youtube_transcript_api</code>
-         and generates concise notes using LangChain + LLM pipeline.</p>
-      <div class="proj-tags">
+      <div class="card-body">
+        <h3>📝 YouTube Notes Maker</h3>
+        <p>Fetches YouTube transcripts via <code>youtube_transcript_api</code> and generates concise notes using LangChain + LLM pipeline.</p>
+      </div>
+      <div class="card-techs">
         <span>LangChain</span><span>LLM</span><span>Python</span><span>Streamlit</span>
       </div>
-      <div class="proj-footer">
-        <a href="https://github.com/ayushjaincr7/youtube_notes_maker"
-           target="_blank" class="proj-cta">
-          View Project <i class="bi bi-arrow-right"></i>
-        </a>
-      </div>
-    </div>
+      <a href="https://github.com/ayushjaincr7/youtube_notes_maker" target="_blank" class="card-cta">
+        <span>Explore Project</span>
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </article>
 
-    <div class="proj-card" data-cat="genai">
-      <div class="proj-card-top">
-        <span class="proj-badge genai">✨ GenAI · Assistant</span>
-        <a href="https://github.com/ayushjaincr7/multilingual_ai_assistant"
-           target="_blank" class="proj-gh-link">
-          <i class="bi bi-github"></i>
+    <article class="project-card" data-cat="genai">
+      <div class="card-shine"></div>
+      <div class="card-header">
+        <span class="card-badge badge-genai">GenAI · Assistant</span>
+        <a href="https://github.com/ayushjaincr7/multilingual_ai_assistant" target="_blank" class="card-link">
+          <i class="bi bi-box-arrow-up-right"></i>
         </a>
       </div>
-      <h3>Multilingual AI Assistant 🌍</h3>
-      <p>Voice-powered chatbot supporting multiple languages via STT/TTS.
-         Ideal for customer support, accessibility &amp; education.</p>
-      <div class="proj-tags">
-        <span>LangChain</span><span>STT/TTS</span>
-        <span>Multilingual</span><span>NLP</span>
+      <div class="card-body">
+        <h3>🌍 Multilingual AI Assistant</h3>
+        <p>Voice-powered chatbot supporting multiple languages via STT/TTS. Ideal for customer support, accessibility & education.</p>
       </div>
-      <div class="proj-footer">
-        <a href="https://github.com/ayushjaincr7/multilingual_ai_assistant"
-           target="_blank" class="proj-cta">
-          View Project <i class="bi bi-arrow-right"></i>
-        </a>
+      <div class="card-techs">
+        <span>LangChain</span><span>STT/TTS</span><span>Multilingual</span><span>NLP</span>
       </div>
-    </div>
+      <a href="https://github.com/ayushjaincr7/multilingual_ai_assistant" target="_blank" class="card-cta">
+        <span>Explore Project</span>
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </article>
 
-    <div class="proj-card" data-cat="genai">
-      <div class="proj-card-top">
-        <span class="proj-badge genai">✨ GenAI · RAG</span>
-        <a href="https://github.com/ayushjaincr7/docqa"
-           target="_blank" class="proj-gh-link">
-          <i class="bi bi-github"></i>
+    <article class="project-card" data-cat="genai">
+      <div class="card-shine"></div>
+      <div class="card-header">
+        <span class="card-badge badge-genai">GenAI · RAG</span>
+        <a href="https://github.com/ayushjaincr7/docqa" target="_blank" class="card-link">
+          <i class="bi bi-box-arrow-up-right"></i>
         </a>
       </div>
-      <h3>Chat With Multiple PDFs 📚</h3>
-      <p>Upload PDFs and ask natural-language questions using FAISS
-         vector embeddings + Google GenAI via a Streamlit interface.</p>
-      <div class="proj-tags">
-        <span>Streamlit</span><span>FAISS</span>
-        <span>LangChain</span><span>Google GenAI</span>
+      <div class="card-body">
+        <h3>📚 Chat With Multiple PDFs</h3>
+        <p>Upload PDFs and ask natural-language questions using FAISS vector embeddings + Google GenAI via a Streamlit interface.</p>
       </div>
-      <div class="proj-footer">
-        <a href="https://github.com/ayushjaincr7/docqa"
-           target="_blank" class="proj-cta">
-          View Project <i class="bi bi-arrow-right"></i>
-        </a>
+      <div class="card-techs">
+        <span>Streamlit</span><span>FAISS</span><span>LangChain</span><span>Google GenAI</span>
       </div>
-    </div>
+      <a href="https://github.com/ayushjaincr7/docqa" target="_blank" class="card-cta">
+        <span>Explore Project</span>
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </article>
 
   </div>
 
-  <!-- Empty state shown when a tab has no matching projects -->
-  <div class="proj-empty" id="proj-empty">
-    <div class="proj-empty-icon">🚧</div>
+  <div class="project-empty" id="proj-empty">
+    <div class="empty-anim">🚧</div>
     <h3>Coming Soon</h3>
-    <p>Projects in this category are under active development. Check back soon!</p>
+    <p>Projects in this category are under active development.</p>
   </div>
-
 </section>
 
 <!-- ── TIMELINE ── -->
 <section id="timeline">
-  <div class="section-head fade-in">
-    <p class="section-label">My journey</p>
-    <h2 class="section-title">Experience &amp; Education</h2>
-    <div class="divider"></div>
+  <div class="section-header fade-in">
+    <div class="section-tag"><i class="bi bi-clock-history"></i> Journey</div>
+    <h2>Experience & <span class="text-glow">Education</span></h2>
+    <p class="section-sub">The path that shaped my career so far</p>
   </div>
 
-  <div class="tl-journey">
+  <div class="timeline-container">
+    <!-- Center line -->
+    <div class="tl-line"></div>
 
-    <!-- ══ 1. Infosys — Current ══ -->
-    <div class="tl-step fade-in tl-active">
-      <div class="tl-logo-wrap">
-
-        <!-- Infosys logo -->
-        <div class="tl-logo tl-logo--white">
-          <img src="timeline/infosys.png">
-        </div>
-
-        <div class="tl-step-meta">
-          <div class="tl-meta-top-row">
-            <span class="tl-type-badge tl-work">
-              <i class="bi bi-briefcase-fill"></i> Work
-            </span>
-            <span class="tl-current-chip">
-              <span class="badge-dot"></span> Current
-            </span>
-          </div>
-          <h3>Infosys</h3>
-          <span class="tl-role">AI Intern</span>
-          <div class="tl-meta-row">
-            <span class="tl-date">
-              <i class="bi bi-calendar3"></i> July 2025 – Present
-            </span>
-            <span class="tl-location">
-              <i class="bi bi-geo-alt-fill"></i> Bhubaneswar, Odisha
-            </span>
-          </div>
-        </div>
+    <!-- 1. Infosys -->
+    <div class="tl-item tl-right fade-in">
+      <div class="tl-dot tl-dot-active">
+        <span class="tl-dot-ping"></span>
       </div>
-
-      <ul class="tl-bullets">
-        <li>Completed 6 months of Infosys training in Java, DSA, DBMS, and AIML specialization.</li>
-        <li>Built and trained ML models using NumPy, Pandas, Scikit-learn, and PyTorch.</li>
-        <li>Implemented deep learning architectures including ANN, CNN, RNN/LSTM, Autoencoders, and GANs.</li>
-        <li>Currently working on AI agentic projects and building pipelines using LLMs.</li>
-      </ul>
-
-      <div class="tl-skills">
-        <span>Python</span><span>PyTorch</span><span>Scikit-learn</span>
-        <span>Deep Learning</span><span>EDA</span><span>LangChain</span>
-        <span>LangGraph</span>
+      <div class="tl-card">
+        <div class="tl-card-glow"></div>
+        <div class="tl-top">
+          <div class="tl-logo-box tl-logo-white">
+            <img src="timeline/infosys.png" alt="Infosys">
+          </div>
+          <div class="tl-info">
+            <div class="tl-badges">
+              <span class="tl-badge tl-badge-work"><i class="bi bi-briefcase-fill"></i> Work</span>
+              <span class="tl-badge tl-badge-current"><span class="status-dot"></span> Current</span>
+            </div>
+            <h3>Infosys</h3>
+            <span class="tl-role-text">AI Intern</span>
+            <div class="tl-meta">
+              <span><i class="bi bi-calendar3"></i> July 2025 – Present</span>
+              <span><i class="bi bi-geo-alt-fill"></i> Bhubaneswar, Odisha</span>
+            </div>
+          </div>
+        </div>
+        <ul class="tl-list">
+          <li>Completed 6 months of Infosys training in Java, DSA, DBMS, and AIML specialization.</li>
+          <li>Built and trained ML models using NumPy, Pandas, Scikit-learn, and PyTorch.</li>
+          <li>Implemented deep learning architectures including ANN, CNN, RNN/LSTM, Autoencoders, and GANs.</li>
+          <li>Currently working on AI agentic projects and building pipelines using LLMs.</li>
+        </ul>
+        <div class="tl-techs">
+          <span>Python</span><span>PyTorch</span><span>Scikit-learn</span>
+          <span>Deep Learning</span><span>EDA</span><span>LangChain</span><span>LangGraph</span>
+        </div>
       </div>
     </div>
 
-    <!-- Arrow -->
-    <div class="tl-connector fade-in">
-      <div class="tl-conn-line"></div>
-      <div class="tl-conn-arrow"><i class="bi bi-arrow-down-circle-fill"></i></div>
-      <div class="tl-conn-line"></div>
-    </div>
-
-    <!-- ══ 2. Hubnex Labs ══ -->
-    <div class="tl-step fade-in">
-      <div class="tl-logo-wrap">
-
-        <div class="tl-logo tl-logo--dark">
-          <img src="timeline/hubnex.png">
-        </div>
-
-        <div class="tl-step-meta">
-          <div class="tl-meta-top-row">
-            <span class="tl-type-badge tl-work">
-              <i class="bi bi-briefcase-fill"></i> Work
-            </span>
+    <!-- 2. Hubnex Labs -->
+    <div class="tl-item tl-left fade-in">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <div class="tl-card-glow"></div>
+        <div class="tl-top">
+          <div class="tl-logo-box tl-logo-dark">
+            <img src="timeline/hubnex.png" alt="Hubnex Labs">
           </div>
-          <h3>Hubnex Labs</h3>
-          <span class="tl-role">AIML Intern</span>
-          <div class="tl-meta-row">
-            <span class="tl-date">
-              <i class="bi bi-calendar3"></i> Dec 2024 – May 2025
-            </span>
-            <span class="tl-location">
-              <i class="bi bi-geo-alt-fill"></i> Remote
-            </span>
+          <div class="tl-info">
+            <div class="tl-badges">
+              <span class="tl-badge tl-badge-work"><i class="bi bi-briefcase-fill"></i> Work</span>
+            </div>
+            <h3>Hubnex Labs</h3>
+            <span class="tl-role-text">AIML Intern</span>
+            <div class="tl-meta">
+              <span><i class="bi bi-calendar3"></i> Dec 2024 – May 2025</span>
+              <span><i class="bi bi-geo-alt-fill"></i> Remote</span>
+            </div>
           </div>
         </div>
-      </div>
-
-      <ul class="tl-bullets">
-        <li>Built AI Interviewer Bot (LangChain + FAISS) over 50+ resumes —
-            latency reduced by <strong>~40%</strong>.</li>
-        <li>Designed 15+ Dialogflow CX flows with STT/TTS —
-            <strong>90%+</strong> voice accuracy.</li>
-        <li>Google GenAI follow-up questions tested in 20+ mock interviews —
-            relevance up <strong>~30%</strong>.</li>
-      </ul>
-
-      <div class="tl-skills">
-        <span>LangChain</span><span>FAISS</span>
-        <span>Dialogflow CX</span><span>Google GenAI</span><span>STT/TTS</span>
+        <ul class="tl-list">
+          <li>Built AI Interviewer Bot (LangChain + FAISS) over 50+ resumes — latency reduced by <strong>~40%</strong>.</li>
+          <li>Designed 15+ Dialogflow CX flows with STT/TTS — <strong>90%+</strong> voice accuracy.</li>
+          <li>Google GenAI follow-up questions tested in 20+ mock interviews — relevance up <strong>~30%</strong>.</li>
+        </ul>
+        <div class="tl-techs">
+          <span>LangChain</span><span>FAISS</span><span>Dialogflow CX</span>
+          <span>Google GenAI</span><span>STT/TTS</span>
+        </div>
       </div>
     </div>
 
-    <!-- Arrow -->
-    <div class="tl-connector fade-in">
-      <div class="tl-conn-line"></div>
-      <div class="tl-conn-arrow"><i class="bi bi-arrow-down-circle-fill"></i></div>
-      <div class="tl-conn-line"></div>
-    </div>
-
-    <!-- ══ 3. MIET B.Tech ══ -->
-    <div class="tl-step fade-in">
-      <div class="tl-logo-wrap">
-
-        <div class="tl-logo tl-logo--dark">
-          <img src="timeline/miet.png">
-        </div>
-
-        <div class="tl-step-meta">
-          <div class="tl-meta-top-row">
-            <span class="tl-type-badge tl-edu">
-              <i class="bi bi-mortarboard-fill"></i> Education
-            </span>
+    <!-- 3. MIET -->
+    <div class="tl-item tl-right fade-in">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <div class="tl-card-glow"></div>
+        <div class="tl-top">
+          <div class="tl-logo-box tl-logo-dark">
+            <img src="timeline/miet.png" alt="MIET">
           </div>
-          <h3>Meerut Institute of Engineering &amp; Technology</h3>
-          <span class="tl-role">B.Tech — CSE (AI &amp; ML) · AKTU</span>
-          <div class="tl-meta-row">
-            <span class="tl-date">
-              <i class="bi bi-calendar3"></i> 2020 – 2024
-            </span>
-            <span class="tl-location">
-              <i class="bi bi-geo-alt-fill"></i> Meerut, UP
-            </span>
+          <div class="tl-info">
+            <div class="tl-badges">
+              <span class="tl-badge tl-badge-edu"><i class="bi bi-mortarboard-fill"></i> Education</span>
+            </div>
+            <h3>MIET, Meerut</h3>
+            <span class="tl-role-text">B.Tech — CSE (AI & ML) · AKTU</span>
+            <div class="tl-meta">
+              <span><i class="bi bi-calendar3"></i> 2020 – 2024</span>
+              <span><i class="bi bi-geo-alt-fill"></i> Meerut, UP</span>
+            </div>
           </div>
         </div>
-      </div>
-
-      <ul class="tl-bullets">
-        <li>Specialized in AI &amp; ML with strong foundations in Deep Learning, Computer Vision, NLP, and Algorithms.</li>
-        <li>Built end-to-end machine learning projects, covering data processing, model development, and evaluation.</li>
-        <li>Applied problem-solving skills through real-world use cases and academic projects.</li>
-        <li>Participated in national-level hackathons, gaining experience in collaborative and time-bound development.</li>
-      </ul>
-
-      <div class="tl-skills">
-        <span>Machine Learning</span><span>Deep Learning</span>
-        <span>Python</span><span>DSA</span>
+        <ul class="tl-list">
+          <li>Specialized in AI & ML with deep foundations in Deep Learning, CV, NLP, and Algorithms.</li>
+          <li>Built end-to-end ML projects covering data processing, model development, and evaluation.</li>
+          <li>Applied problem-solving skills through real-world projects and hackathons.</li>
+          <li>Participated in national-level hackathons for collaborative development experience.</li>
+        </ul>
+        <div class="tl-techs">
+          <span>Machine Learning</span><span>Deep Learning</span><span>Python</span><span>DSA</span>
+        </div>
       </div>
     </div>
-
-
-    
-
-  </div><!-- end tl-journey -->
+  </div>
 </section>
 
 <!-- ── CERTIFICATES ── -->
 <section id="certi">
-  <div class="section-head fade-in">
-    <p class="section-label">Continuous learning</p>
-    <h2 class="section-title">Certificates &amp; Achievements</h2>
-    <div class="divider"></div>
+  <div class="section-header fade-in">
+    <div class="section-tag"><i class="bi bi-award-fill"></i> Recognition</div>
+    <h2>Certificates & <span class="text-glow">Achievements</span></h2>
+    <p class="section-sub">Continuous learning, one certification at a time</p>
   </div>
 
-  <div class="cert-grid stagger">
+  <div class="cert-masonry stagger">
 
-    <a href="https://drive.google.com/file/d/13Tni5g5Fp2SKpYDF2aRt4AB7ELvozBDh/view"
-       target="_blank" class="cert-card">
-      <div class="cert-icon-wrap cert-ineuron">
-        <i class="bi bi-patch-check-fill"></i>
+    <a href="https://drive.google.com/file/d/13Tni5g5Fp2SKpYDF2aRt4AB7ELvozBDh/view" target="_blank" class="cert-tile">
+      <div class="cert-ribbon cert-ribbon-purple"></div>
+      <div class="cert-content">
+        <div class="cert-icon cert-icon-purple"><i class="bi bi-patch-check-fill"></i></div>
+        <div class="cert-detail">
+          <h4>Data Science Masters Pro 2024</h4>
+          <span class="cert-org">iNeuron</span>
+        </div>
       </div>
-      <div class="cert-info">
-        <p class="cert-name">Data Science Masters Pro 2024</p>
-        <p class="cert-issuer">iNeuron</p>
-      </div>
-      <i class="bi bi-arrow-up-right cert-arrow"></i>
+      <i class="bi bi-arrow-up-right cert-ext"></i>
     </a>
 
-    <a href="https://drive.google.com/file/d/1FwU8mg5lISekM_q80-CRURpktg7v0igS/view"
-       target="_blank" class="cert-card">
-      <div class="cert-icon-wrap cert-ineuron">
-        <i class="bi bi-patch-check-fill"></i>
+    <a href="https://drive.google.com/file/d/1FwU8mg5lISekM_q80-CRURpktg7v0igS/view" target="_blank" class="cert-tile">
+      <div class="cert-ribbon cert-ribbon-purple"></div>
+      <div class="cert-content">
+        <div class="cert-icon cert-icon-purple"><i class="bi bi-patch-check-fill"></i></div>
+        <div class="cert-detail">
+          <h4>Generative AI with LangChain & LlamaIndex</h4>
+          <span class="cert-org">iNeuron</span>
+        </div>
       </div>
-      <div class="cert-info">
-        <p class="cert-name">Generative AI with LangChain &amp; LlamaIndex</p>
-        <p class="cert-issuer">iNeuron</p>
-      </div>
-      <i class="bi bi-arrow-up-right cert-arrow"></i>
+      <i class="bi bi-arrow-up-right cert-ext"></i>
     </a>
 
-    <a href="https://www.freecodecamp.org/certification/Ayush_Jain7/data-analysis-with-python-v7"
-       target="_blank" class="cert-card">
-      <div class="cert-icon-wrap cert-fcc">
-        <i class="bi bi-patch-check-fill"></i>
+    <a href="https://www.freecodecamp.org/certification/Ayush_Jain7/data-analysis-with-python-v7" target="_blank" class="cert-tile">
+      <div class="cert-ribbon cert-ribbon-cyan"></div>
+      <div class="cert-content">
+        <div class="cert-icon cert-icon-cyan"><i class="bi bi-patch-check-fill"></i></div>
+        <div class="cert-detail">
+          <h4>Data Analysis with Python</h4>
+          <span class="cert-org">freeCodeCamp</span>
+        </div>
       </div>
-      <div class="cert-info">
-        <p class="cert-name">Data Analysis with Python</p>
-        <p class="cert-issuer">freeCodeCamp</p>
-      </div>
-      <i class="bi bi-arrow-up-right cert-arrow"></i>
+      <i class="bi bi-arrow-up-right cert-ext"></i>
     </a>
 
-    <a href="https://www.freecodecamp.org/certification/Ayush_Jain7/scientific-computing-with-python-v7"
-       target="_blank" class="cert-card">
-      <div class="cert-icon-wrap cert-fcc">
-        <i class="bi bi-patch-check-fill"></i>
+    <a href="https://www.freecodecamp.org/certification/Ayush_Jain7/scientific-computing-with-python-v7" target="_blank" class="cert-tile">
+      <div class="cert-ribbon cert-ribbon-cyan"></div>
+      <div class="cert-content">
+        <div class="cert-icon cert-icon-cyan"><i class="bi bi-patch-check-fill"></i></div>
+        <div class="cert-detail">
+          <h4>Scientific Computing with Python</h4>
+          <span class="cert-org">freeCodeCamp</span>
+        </div>
       </div>
-      <div class="cert-info">
-        <p class="cert-name">Scientific Computing with Python</p>
-        <p class="cert-issuer">freeCodeCamp</p>
-      </div>
-      <i class="bi bi-arrow-up-right cert-arrow"></i>
+      <i class="bi bi-arrow-up-right cert-ext"></i>
     </a>
 
-    <a href="https://www.freecodecamp.org/certification/Ayush_Jain7/javascript-algorithms-and-data-structures"
-       target="_blank" class="cert-card">
-      <div class="cert-icon-wrap cert-fcc">
-        <i class="bi bi-patch-check-fill"></i>
+    <a href="https://www.freecodecamp.org/certification/Ayush_Jain7/javascript-algorithms-and-data-structures" target="_blank" class="cert-tile">
+      <div class="cert-ribbon cert-ribbon-cyan"></div>
+      <div class="cert-content">
+        <div class="cert-icon cert-icon-cyan"><i class="bi bi-patch-check-fill"></i></div>
+        <div class="cert-detail">
+          <h4>JS Algorithms & Data Structures</h4>
+          <span class="cert-org">freeCodeCamp</span>
+        </div>
       </div>
-      <div class="cert-info">
-        <p class="cert-name">JavaScript Algorithms &amp; Data Structures</p>
-        <p class="cert-issuer">freeCodeCamp</p>
-      </div>
-      <i class="bi bi-arrow-up-right cert-arrow"></i>
+      <i class="bi bi-arrow-up-right cert-ext"></i>
     </a>
 
-    <a href="https://drive.google.com/file/d/1GLZKjhwSZuuwh5-KwTJHQRzB5krcja95/view?usp=sharing"
-       target="_blank" class="cert-card">
-      <div class="cert-icon-wrap cert-infosys">
-        <i class="bi bi-patch-check-fill"></i>
+    <a href="https://drive.google.com/file/d/1GLZKjhwSZuuwh5-KwTJHQRzB5krcja95/view?usp=sharing" target="_blank" class="cert-tile">
+      <div class="cert-ribbon cert-ribbon-green"></div>
+      <div class="cert-content">
+        <div class="cert-icon cert-icon-green"><i class="bi bi-patch-check-fill"></i></div>
+        <div class="cert-detail">
+          <h4>Infosys Certified ML Professional</h4>
+          <span class="cert-org">Infosys Lex</span>
+        </div>
       </div>
-      <div class="cert-info">
-        <p class="cert-name">Infosys Certified Machine Learning Professional </p>
-        <p class="cert-issuer">Infosys Lex</p>
-      </div>
-      <i class="bi bi-arrow-up-right cert-arrow"></i>
+      <i class="bi bi-arrow-up-right cert-ext"></i>
     </a>
 
-    <a href="https://drive.google.com/file/d/1o_MWnYqlhQr0RJCqtFtYZ-uWmkmiRSsn/view?usp=sharing"
-       target="_blank" class="cert-card">
-      <div class="cert-icon-wrap cert-infosys">
-        <i class="bi bi-patch-check-fill"></i>
+    <a href="https://drive.google.com/file/d/1o_MWnYqlhQr0RJCqtFtYZ-uWmkmiRSsn/view?usp=sharing" target="_blank" class="cert-tile">
+      <div class="cert-ribbon cert-ribbon-green"></div>
+      <div class="cert-content">
+        <div class="cert-icon cert-icon-green"><i class="bi bi-patch-check-fill"></i></div>
+        <div class="cert-detail">
+          <h4>Infosys Certified Data Science Professional</h4>
+          <span class="cert-org">Infosys Lex</span>
+        </div>
       </div>
-      <div class="cert-info">
-        <p class="cert-name">Infosys Certified Data Science using Python Professional-Part1 </p>
-        <p class="cert-issuer">Infosys Lex</p>
-      </div>
-      <i class="bi bi-arrow-up-right cert-arrow"></i>
+      <i class="bi bi-arrow-up-right cert-ext"></i>
     </a>
 
-
-    <!-- LeetCode achievement -->
-    <div class="cert-card cert-card--plain">
-      <div class="cert-icon-wrap cert-leet">
-        <i class="bi bi-trophy-fill"></i>
+    <!-- Achievement -->
+    <div class="cert-tile cert-tile-achievement">
+      <div class="cert-ribbon cert-ribbon-gold"></div>
+      <div class="cert-content">
+        <div class="cert-icon cert-icon-gold"><i class="bi bi-trophy-fill"></i></div>
+        <div class="cert-detail">
+          <h4>200+ Problems Solved</h4>
+          <span class="cert-org">LeetCode</span>
+        </div>
       </div>
-      <div class="cert-info">
-        <p class="cert-name">200+ Problems Solved</p>
-        <p class="cert-issuer">LeetCode</p>
-      </div>
-      <span class="cert-badge-chip">Achievement</span>
+      <span class="achievement-chip">🏆 Achievement</span>
     </div>
-
   </div>
 </section>
 
 <!-- ── CONTACT ── -->
 <section id="contact">
-  <div class="section-head fade-in">
-    <p class="section-label">Let's talk</p>
-    <h2 class="section-title">Get in Touch</h2>
-    <div class="divider"></div>
+  <div class="section-header fade-in">
+    <div class="section-tag"><i class="bi bi-send-fill"></i> Reach Out</div>
+    <h2>Let's <span class="text-glow">Connect</span></h2>
+    <p class="section-sub">Have a project in mind? Let's make it happen.</p>
   </div>
 
-  <div class="contact-card fade-in">
-    <div class="contact-emoji">👋</div>
-    <h2>Open to new opportunities</h2>
-    <p>Whether you have a project, a question, or just want to say hi —
-       my inbox is always open.</p>
+  <div class="contact-split fade-in">
+    <div class="contact-info-side">
+      <div class="contact-wave">👋</div>
+      <h3>Open to new opportunities</h3>
+      <p>Whether you have a project, a question, or just want to say hi — my inbox is always open.</p>
 
-    <div class="contact-links">
-      <a href="mailto:ja7ayush@gmail.com" class="contact-link">
-        <i class="bi bi-envelope-fill"></i> ja7ayush@gmail.com
-      </a>
-      <a href="tel:+917351787808" class="contact-link">
-        <i class="bi bi-telephone-fill"></i> +91 7351787808
-      </a>
-      <a href="https://www.linkedin.com/in/ayush-jain-a96720250/"
-         target="_blank" class="contact-link">
-        <i class="bi bi-linkedin"></i> LinkedIn
-      </a>
-      <a href="https://github.com/ayushjaincr7"
-         target="_blank" class="contact-link">
-        <i class="bi bi-github"></i> GitHub
+      <div class="contact-methods">
+        <a href="mailto:ja7ayush@gmail.com" class="contact-method">
+          <div class="cm-icon"><i class="bi bi-envelope-fill"></i></div>
+          <div class="cm-text">
+            <span class="cm-label">Email</span>
+            <span class="cm-value">ja7ayush@gmail.com</span>
+          </div>
+        </a>
+        <a href="tel:+917351787808" class="contact-method">
+          <div class="cm-icon cm-icon-green"><i class="bi bi-telephone-fill"></i></div>
+          <div class="cm-text">
+            <span class="cm-label">Phone</span>
+            <span class="cm-value">+91 7351787808</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/ayush-jain-a96720250/" target="_blank" class="contact-method">
+          <div class="cm-icon cm-icon-blue"><i class="bi bi-linkedin"></i></div>
+          <div class="cm-text">
+            <span class="cm-label">LinkedIn</span>
+            <span class="cm-value">Connect with me</span>
+          </div>
+        </a>
+        <a href="https://github.com/ayushjaincr7" target="_blank" class="contact-method">
+          <div class="cm-icon cm-icon-gray"><i class="bi bi-github"></i></div>
+          <div class="cm-text">
+            <span class="cm-label">GitHub</span>
+            <span class="cm-value">View my code</span>
+          </div>
+        </a>
+      </div>
+
+      <a href="https://drive.google.com/uc?export=download&id=1zpQblm-h2TopaIHbMpweIptPMADrvXxL"
+         class="btn-cosmic btn-cosmic-full" download>
+        <span class="btn-bg"></span>
+        <i class="bi bi-file-earmark-pdf-fill"></i>
+        <span>Download Resume</span>
       </a>
     </div>
 
-    <a href="https://drive.google.com/uc?export=download&id=1zpQblm-h2TopaIHbMpweIptPMADrvXxL"
-       class="btn btn-primary" download>
-      <i class="bi bi-file-earmark-pdf"></i> Download Resume
-    </a>
-
-    <p class="footer-note">Designed &amp; built by Ayush Jain · 2025</p>
+    <div class="contact-visual-side">
+      <div class="contact-globe">
+        <div class="globe-ring globe-ring-1"></div>
+        <div class="globe-ring globe-ring-2"></div>
+        <div class="globe-ring globe-ring-3"></div>
+        <div class="globe-center">
+          <i class="bi bi-geo-alt-fill"></i>
+        </div>
+        <div class="globe-label gl-1">🇮🇳 India</div>
+        <div class="globe-label gl-2">💼 Remote Ready</div>
+        <div class="globe-label gl-3">🌍 Global</div>
+      </div>
+    </div>
   </div>
+
+  <p class="footer-text">
+    Designed & crafted with 💜 by <strong>Ayush Jain</strong> · 2025
+  </p>
 </section>
 
 <!-- ── SCRIPTS ── -->
 <script>
-  /* ── Active nav ── */
-  const navLinks = document.querySelectorAll(".navBar a");
-  const sections = ["hero","skills","projects","timeline","certi","contact"]
+  /* Cursor glow */
+  const glow = document.getElementById('cursorGlow');
+  document.addEventListener('mousemove', e => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+  });
+
+  /* Active nav */
+  const navLinks = document.querySelectorAll('.nav-link');
+  const sections = ['hero','skills','projects','timeline','certi','contact']
     .map(id => document.getElementById(id)).filter(Boolean);
 
-  function updateNav() {
-    let current = "";
+  function updateNav(){
+    let current = '';
     sections.forEach(s => {
-      if (window.scrollY >= s.offsetTop - 130) current = s.id;
+      if(window.scrollY >= s.offsetTop - 140) current = s.id;
     });
     navLinks.forEach(a =>
-      a.classList.toggle("active", a.getAttribute("href") === "#" + current)
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current)
     );
   }
-  window.addEventListener("scroll", updateNav, { passive: true });
+  window.addEventListener('scroll', updateNav, {passive:true});
   updateNav();
 
-  /* ── Hamburger ── */
-  const hamburger  = document.getElementById("hamburger");
-  const navLinksEl = document.querySelector(".nav-links");
-  hamburger.addEventListener("click", () => {
-    navLinksEl.classList.toggle("open");
-    hamburger.classList.toggle("active");
+  /* Hamburger */
+  const hamburger = document.getElementById('hamburger');
+  const navLinksEl = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => {
+    navLinksEl.classList.toggle('open');
+    hamburger.classList.toggle('active');
   });
-  navLinks.forEach(a => a.addEventListener("click", () => {
-    navLinksEl.classList.remove("open");
-    hamburger.classList.remove("active");
+  navLinks.forEach(a => a.addEventListener('click', () => {
+    navLinksEl.classList.remove('open');
+    hamburger.classList.remove('active');
   }));
 
-  /* ── Scroll reveal ── */
+  /* Scroll reveal */
   const io = new IntersectionObserver(
     entries => entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add("visible"); io.unobserve(e.target); }
+      if(e.isIntersecting){e.target.classList.add('visible'); io.unobserve(e.target);}
     }),
-    { threshold: 0.07 }
+    {threshold:0.06}
   );
-  document.querySelectorAll(".fade-in, .stagger, .tl-connector")
-    .forEach(el => io.observe(el));
+  document.querySelectorAll('.fade-in,.stagger').forEach(el => io.observe(el));
 
-  /* ── Project filter ── */
-  const tabs    = document.querySelectorAll(".proj-tab");
-  const cards   = document.querySelectorAll(".proj-card");
-  const emptyEl = document.getElementById("proj-empty");
-  const countEl = document.getElementById("proj-count-label");
+  /* Project filter */
+  const tabs = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.project-card');
+  const emptyEl = document.getElementById('proj-empty');
+  const tabLabels = {all:'All',ml:'ML',cv:'CV',nlp:'NLP',genai:'GenAI',dl:'DL',data:'Data'};
 
-  const tabLabels = {
-    all:"All", ml:"Machine Learning", cv:"Computer Vision",
-    nlp:"NLP", genai:"Generative AI", dl:"Deep Learning", data:"Data Science"
-  };
-
-  function filterProjects(f) {
-    let n = 0;
+  function filterProjects(f){
+    let n=0;
     cards.forEach(c => {
-      const show = f === "all" || c.dataset.cat === f;
-      c.style.display = show ? "flex" : "none";
-      if (show) n++;
+      const show = f==='all' || c.dataset.cat===f;
+      c.style.display = show ? '' : 'none';
+      if(show) n++;
     });
-    emptyEl.style.display = n === 0 ? "flex" : "none";
-    countEl.textContent = n === 0
-      ? `No projects in ${tabLabels[f]} yet — coming soon!`
-      : f === "all"
-        ? `Showing all ${n} projects`
-        : `Showing ${n} project${n > 1 ? "s" : ""} in ${tabLabels[f]}`;
+    emptyEl.style.display = n===0 ? 'flex' : 'none';
   }
 
-  tabs.forEach(tab => tab.addEventListener("click", () => {
-    tabs.forEach(t => t.classList.remove("active"));
-    tab.classList.add("active");
+  tabs.forEach(tab => tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
     filterProjects(tab.dataset.filter);
   }));
+  filterProjects('all');
 
-  filterProjects("all");
+  /* Typing cursor blink */
+  setInterval(() => {
+    const cursor = document.querySelector('.term-cursor');
+    if(cursor) cursor.style.opacity = cursor.style.opacity === '0' ? '1' : '0';
+  }, 530);
+
+  /* Role cursor blink */
+  setInterval(() => {
+    const rc = document.querySelector('.role-cursor');
+    if(rc) rc.style.opacity = rc.style.opacity === '0' ? '1' : '0';
+  }, 600);
 </script>
 </body>
 </html>
