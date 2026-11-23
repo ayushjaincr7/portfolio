@@ -10,7 +10,7 @@ PF.data.experience = [
     id: 'infosys',
     role: 'System Engineer',
     company: 'Infosys',
-    type: 'Full-time',
+    type: 'Full-time Bangalore',
     start: '2026-08',
     end: null,
     summary: 'Working with Snowflake and data technologies while continuing to explore AI-driven tools and workflows.',
@@ -20,6 +20,22 @@ PF.data.experience = [
       'Explore AI-driven technologies and look for practical ways to use them'
     ],
     tech: ['Snowflake', 'SQL', 'Data Technologies']
+  },
+  {
+  id: 'infosys-ai',
+  role: 'AI Intern',
+  company: 'Infosys',
+  type: 'Internship Bhubaneswar',
+  start: '2025-07',
+  end: '2026-07',
+  summary: 'Worked on AI and Machine Learning technologies, strengthening practical engineering skills through structured training and project-based learning.',
+  highlights: [
+    'Completed intensive training in Java, Data Structures, DBMS, and Artificial Intelligence & Machine Learning',
+    'Worked on Generative AI concepts and applications as part of a 5-month DRM GenAI project',
+    'Developed expertise in Machine Learning, Data Science using Python, and AI technologies',
+    'Earned multiple AI certifications and Infosys learning credentials'
+  ],
+  tech: ['Python', 'Machine Learning', 'Generative AI', 'Java', 'SQL', 'Data Science']
   },
   {
     id: 'hubnex-labs',
