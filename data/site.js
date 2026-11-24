@@ -15,11 +15,10 @@ PF.data.site = {
     'Ayush Jain is an AI/ML Engineer building intelligent systems with Generative AI, RAG, Agentic AI and Machine Learning. Explore projects, skills, certifications and experience.',
 
   /* >>> REPLACE these placeholders with your real details <<< */
-  email: 'your.email@example.com',
-  url: 'https://your-domain.example', // your deployed site URL (used for SEO + sharing)
+  email: 'ja7ayush@gmail.com', // your deployed site URL (used for SEO + sharing)
   social: {
-    github: 'https://github.com/YOUR_GITHUB_USERNAME',
-    linkedin: 'https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE'
+    github: 'https://github.com/ayushjaincr7/',
+    linkedin: 'https://www.linkedin.com/in/ayush---jain07'
   },
 
   /* Path to the PDF served by the "Download Resume" buttons. Replace the file in /assets. */
